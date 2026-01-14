@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Libre_Baskerville } from "next/font/google";
+import Navbar from "@/components/Navbar";
 import "./globals.css";
 
 const inter = Inter({
@@ -31,6 +32,7 @@ export default function RootLayout({
       <body
         className={`${inter.variable} ${libreBaskerville.variable} antialiased`}
       >
+        <Navbar />
         {children}
       </body>
     </html>
