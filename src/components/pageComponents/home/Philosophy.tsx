@@ -4,8 +4,8 @@ export default function Philosophy() {
   return (
     <section className="relative bg-white py-24 md:py-48 px-6 overflow-hidden">
       {/* Subtle Background Texture - Grainy effect using CSS-only approach if possible, or just clean zinc */}
-      <div className="absolute inset-0 opacity-[0.03] transition-opacity duration-500 pointer-events-none">
-        <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/natural-paper.png')]" />
+      <div className="absolute inset-0 opacity-60 transition-opacity duration-500 pointer-events-none">
+        <div className="absolute inset-0 bg-white bg-[url('https://www.transparenttextures.com/patterns/clean-gray-paper.png')]" />
       </div>
 
       <div className="max-w-7xl mx-auto">
