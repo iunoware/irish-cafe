@@ -1,11 +1,25 @@
 import type { Metadata } from "next";
 import { Inter, Libre_Baskerville } from "next/font/google";
 import Navbar from "@/components/Navbar";
+import localFont from "next/font/local";
 import "./globals.css";
 
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
+  display: "swap",
+});
+
+const bonVivant = localFont({
+  src: [
+    {
+      path: "../fonts/BonVivantSerifBold.ttf",
+
+      weight: "400",
+      style: "normal",
+    },
+  ],
+  variable: "--font-bon-vivant",
   display: "swap",
 });
 
@@ -30,7 +44,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.variable} ${libreBaskerville.variable} antialiased`}
+        className={`${inter.variable} ${libreBaskerville.variable} ${bonVivant.variable} antialiased`}
       >
         <Navbar />
         {children}

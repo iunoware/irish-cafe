@@ -1,15 +1,72 @@
+"use client";
+
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 import Image from "next/image";
+import { useRef } from "react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 export default function Hero() {
+  const imageRef = useRef<HTMLDivElement>(null);
+  const containerRef = useRef<HTMLElement>(null);
+  const textRef = useRef<HTMLHeadingElement>(null);
+  const contentRef = useRef<HTMLParagraphElement>(null);
+
+  useGSAP(
+    () => {
+      if (!containerRef.current) return;
+
+      // 1️⃣ Parallax-like image movement (scroll-based)
+      gsap.to(imageRef.current, {
+        yPercent: 15, // subtle parallax
+        ease: "none",
+        scrollTrigger: {
+          trigger: containerRef.current,
+          start: "top bottom",
+          end: "bottom top",
+          scrub: true,
+        },
+      });
+
+      // 2️⃣ Text fade-up on page load (once)
+      gsap.from(textRef.current, {
+        y: 60,
+        opacity: 0,
+        duration: 1,
+        ease: "power2.out",
+      });
+
+      gsap.from(contentRef.current, {
+        y: 40,
+        ease: "power2.inOut",
+        duration: 2,
+        opacity: 0,
+      });
+    },
+    { scope: containerRef },
+  );
+
   return (
-    <section className="relative h-screen w-full overflow-hidden flex items-center justify-start text-white bg-black">
+    <section
+      ref={containerRef}
+      className="relative h-screen w-full overflow-hidden flex items-start md:items-center justify-start text-white bg-black"
+    >
       {/* Background Image with subtle zoom-in effect */}
-      <div className=" fixed top-0 left-0 w-full h-full">
+      <div ref={imageRef} className="back-layer absolute w-full h-full">
         <Image
           src="/images/2.jpg"
           alt="The Irish Cafe Interior"
           fill
-          className="object-cover object-center scale-105 animate-subtle-zoom"
+          className="object-cover object-center scale-105 hidden md:block animate-subtle-zoom"
+          priority
+        />
+        <Image
+          src="/images/mob-hero.png"
+          alt="Best Cafe in Madurai"
+          fill
+          className="object-cover object-center block md:hidden animate-subtle-zoom"
           priority
         />
         {/* Editorial Overlay */}
@@ -25,27 +82,33 @@ export default function Hero() {
         />
       </div> */}
 
-      <div className="relative z-10 text-start px-26 space-y-8 animate-fade-in-up">
+      <div className="relative z-10 pt-20 text-start px-10 md:px-26 space-y-8 animate-fade-in-up">
         <div className="overflow-hidden">
-          <p className="font-sans uppercase tracking-[0.4em] text-[10px] md:text-xs opacity-70 animate-slide-up animation-delay-200">
+          <p className="font-sans hidden md:block text-black md:text-white uppercase tracking-[0.4em] text-[10px] md:text-xs opacity-70 animate-slide-up animation-delay-200">
             Est. 2024 — Madurai
           </p>
         </div>
 
         <div className="overflow-hidden">
-          <h1 className="text-5xl md:text-7xl font-serif font-bold tracking-tight leading-tight animate-slide-up animation-delay-400">
+          <h1
+            ref={textRef}
+            className="text-5xl headline md:text-7xl text-black md:text-white mix-blend-difference font-serif animate-slide-up animation-delay-400"
+          >
             The Irish Cafe
           </h1>
         </div>
 
         <div className="overflow-hidden">
-          <p className="font-serif italic text-lg md:text-xl opacity-90 max-w-lg mx-auto leading-relaxed animate-slide-up animation-delay-600">
+          <p
+            ref={contentRef}
+            className="font-serif headline italic text-lg   md:text-white md:text-xl mix-blend-difference opacity-90 max-w-lg mx-auto leading-relaxed animate-slide-up animation-delay-600"
+          >
             Where tradition meets the temple city. Experience premium coffee and
             authentic Irish hospitality.
           </p>
         </div>
 
-        <div className="pt-8 animate-fade-in animation-delay-1000">
+        <div className="md:pt-8 animate-fade-in animation-delay-1000">
           <a
             href="/menu"
             className="inline-block group relative font-sans text-[11px] uppercase tracking-[0.3em] py-4 px-10 border border-white/30 hover:border-white transition-all duration-500 overflow-hidden"

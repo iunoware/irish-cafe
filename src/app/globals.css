@@ -5,13 +5,24 @@
   --foreground: #171717;
   --font-inter: var(--font-inter);
   --font-libre: var(--font-libre);
+  --font-bon-vivant: var(--font-bon-vivant);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-inter);
-  --font-serif: var(--font-libre);
+  --font-serif: var(--font-bon-vivant);
+}
+
+::selection {
+  background-color: #0a0a0a;
+  color: white;
+}
+
+::-moz-selection {
+  background-color: #000000;
+  color: white;
 }
 
 @layer base {
@@ -22,7 +33,7 @@
   h4,
   h5,
   .heading {
-    font-family: var(--font-libre), serif;
+    font-family: var(--font-bon-vivant), serif;
   }
 }
 
@@ -34,7 +45,10 @@
 }
 
 body {
-  background: var(--background);
+  /* background: var(--background); */
+  /* background-color: #ffffff; */
+  background-image: url("https://www.transparenttextures.com/patterns/clean-gray-paper.png");
+
   color: var(--foreground);
   font-family: var(--font-sans), system-ui, sans-serif;
 }
@@ -49,7 +63,7 @@ body {
 
 ::-webkit-scrollbar-thumb {
   background: #888;
-  border-radius: 2rem;
+  /* border-radius: 2rem; */
 }
 
 ::-webkit-scrollbar-thumb:hover {
