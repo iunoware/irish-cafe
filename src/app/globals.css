@@ -26,6 +26,7 @@
 }
 
 @layer base {
+
   h1,
   h2,
   h3,
@@ -50,4 +51,21 @@ body {
 
   color: var(--foreground);
   font-family: var(--font-sans), system-ui, sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f7f7f7;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  /* border-radius: 2rem; */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
