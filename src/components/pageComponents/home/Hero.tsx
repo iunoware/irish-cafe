@@ -18,17 +18,34 @@ export default function Hero() {
     () => {
       if (!containerRef.current) return;
 
-      // 1️⃣ Parallax-like image movement (scroll-based)
-      gsap.to(imageRef.current, {
-        yPercent: 15, // subtle parallax
-        ease: "none",
+      const tl = gsap.timeline({
         scrollTrigger: {
           trigger: containerRef.current,
-          start: "top bottom",
+          start: "top top",
           end: "bottom top",
+          // markers: true,
           scrub: true,
         },
       });
+
+      // Background Layer
+      tl.to(imageRef.current, {
+        yPercent: 15,
+        // scale: 1.1,
+        ease: "none",
+      });
+
+      // 1️⃣ Parallax-like image movement (scroll-based)
+      // gsap.to(imageRef.current, {
+      //   yPercent: 15, // subtle parallax
+      //   ease: "none",
+      //   scrollTrigger: {
+      //     trigger: containerRef.current,
+      //     start: "top bottom",
+      //     end: "bottom top",
+      //     scrub: true,
+      //   },
+      // });
 
       // 2️⃣ Text fade-up on page load (once)
       gsap.from(textRef.current, {

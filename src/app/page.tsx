@@ -9,7 +9,10 @@ import CuisineTransition from "../components/pageComponents/home/CuisineTransiti
 
 export default function Home() {
   return (
-    <main className="relative bg-[url('/images/clean-gray-paper.png')] min-h-screen">
+    <main className="relative min-h-screen">
+      <div className="absolute inset-0 opacity-80 pointer-events-none">
+        <div className="absolute inset-0 bg-[url('/images/clean-gray-paper.png')]" />
+      </div>
       <Hero />
       <Philosophy />
       <Cuisine />

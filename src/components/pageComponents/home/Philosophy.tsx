@@ -1,8 +1,42 @@
+"use client";
 import Image from "next/image";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useRef } from "react";
+import { useGSAP } from "@gsap/react";
+
+gsap.registerPlugin(ScrollTrigger);
 
 export default function Philosophy() {
+  const sectionRef = useRef<HTMLElement>(null);
+  const imageRef = useRef<HTMLDivElement>(null);
+  const contentRef = useRef<HTMLDivElement>(null);
+
+  useGSAP(
+    () => {
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: sectionRef.current,
+          start: "top 70%",
+          end: "bottom top",
+        },
+      });
+
+      tl.from(imageRef.current, {
+        opacity: 0,
+        y: 100,
+        scale: 1.05,
+        duration: 1,
+      }).from(contentRef.current?.children || [], {
+        opacity: 0,
+        y: 30,
+      });
+    },
+    { scope: sectionRef },
+  );
+
   return (
-    <section className="relative bg-white py-24 md:py-48 px-6 overflow-hidden">
+    <section ref={sectionRef} className="relative bg-white py-24 md:py-48 px-6">
       {/* Subtle Background Texture - Grainy effect using CSS-only approach if possible, or just clean zinc */}
       <div className="absolute inset-0 opacity-60 transition-opacity duration-500 pointer-events-none">
         <div className="absolute inset-0 bg-white bg-[url('https://www.transparenttextures.com/patterns/clean-gray-paper.png')]" />
@@ -12,7 +46,10 @@ export default function Philosophy() {
         <div className="flex flex-col md:flex-row items-stretch gap-16 md:gap-0 relative">
           {/* Large Dominant Image Area - Occupies major visual weight */}
           <div className="w-full md:w-[65%] relative z-10">
-            <div className="aspect-4/5 md:aspect-16/11 relative overflow-hidden group">
+            <div
+              ref={imageRef}
+              className="aspect-4/5 md:aspect-16/11 relative overflow-hidden group"
+            >
               <Image
                 src="/images/DSC01521.JPG"
                 alt="Atmospheric Interior of The Irish Cafe"
@@ -34,7 +71,10 @@ export default function Philosophy() {
 
           {/* Calm Editorial Text Block - Layered/Paired transition */}
           <div className="w-full md:w-[45%] md:absolute md:right-0 md:top-1/2 md:-translate-y-1/2 z-20 md:pl-24">
-            <div className="bg-white md:p-16 space-y-8 md:shadow-[40px_40px_80px_rgba(0,0,0,0.03)] border-zinc-100">
+            <div
+              ref={contentRef}
+              className="bg-white md:p-16 space-y-8 md:shadow-[40px_40px_80px_rgba(0,0,0,0.03)] border-zinc-100"
+            >
               <div className="space-y-6">
                 <span className="hidden md:block font-sans text-[10px] md:text-xs uppercase tracking-[0.4em] text-zinc-400 font-medium">
                   Our Philosophy
