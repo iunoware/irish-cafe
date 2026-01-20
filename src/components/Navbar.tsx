@@ -62,7 +62,7 @@ export default function Navbar() {
       <nav
         className={`fixed top-0 left-0 w-full z-50 transition-all duration-400 ease-out h-20 md:h-20 flex items-center px-6 md:px-12 ${
           isVisible ? "translate-y-0" : "-translate-y-full"
-        } ${isScrolled ? "bg-white/65 backdrop-blur-md shadow-sm " : "bg-transparent"}`}
+        } ${isScrolled ? "bg-white shadow-sm" : "bg-transparent"}`}
       >
         <div className="max-w-7xl mx-auto w-full flex justify-between items-center relative h-full">
           {/* Desktop Navigation - Left */}
@@ -72,9 +72,7 @@ export default function Navbar() {
                 key={link.name}
                 href={link.href}
                 className={`font-sans font-medium text-[12px] uppercase tracking-[0.2em] transition-colors group relative ${
-                  isScrolled
-                    ? "text-zinc-900 hover:text-zinc-500"
-                    : "text-white hover:text-zinc-300"
+                  isScrolled ? "text-zinc-950" : "text-white/90 hover:text-zinc-300"
                 }`}
               >
                 {link.name === "Home" ? "" : link.name}
@@ -88,7 +86,9 @@ export default function Navbar() {
             <Link href="/" className="block relative w-32 md:w-48 h-12 md:h-16 ">
               <Image
                 src={
-                  isScrolled ? "/images/the-irish-cafe-b-text.png" : "/images/w-text.png"
+                  isScrolled
+                    ? "/images/the-irish-cafe-b-text.png"
+                    : "/images/the-irish-cafe-w-text.png"
                 }
                 alt="The Irish Cafe"
                 fill
@@ -105,9 +105,7 @@ export default function Navbar() {
                 key={link.name}
                 href={link.href}
                 className={`font-sans font-medium text-[12px] uppercase tracking-[0.2em] transition-colors group relative ${
-                  isScrolled
-                    ? "text-zinc-900 hover:text-zinc-500"
-                    : "text-white hover:text-zinc-300"
+                  isScrolled ? "text-zinc-950" : "text-white hover:text-zinc-300"
                 }`}
               >
                 {link.name === "Home" ? "" : link.name}
@@ -138,7 +136,7 @@ export default function Navbar() {
 
       {/* Mobile Menu Overlay */}
       <div
-        className={`fixed inset-0 z-100 bg-white/65 backdrop-blur-md ring-1 ring-white/10 transition-all duration-700 ease-[cubic-bezier(0.85,0,0.15,1)] ${
+        className={`fixed inset-0 z-50 bg-white/65 backdrop-blur-md ring-1 ring-white/10 transition-all duration-700 ease-[cubic-bezier(0.85,0,0.15,1)] ${
           isMobileMenuOpen ? "translate-y-0 opacity-100" : "-translate-y-full opacity-0"
         }`}
       >
