@@ -5,6 +5,7 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ScrollSmoother } from "gsap/ScrollSmoother";
+import { SplitText } from "gsap/SplitText";
 
 import Image from "next/image";
 
@@ -16,6 +17,7 @@ export default function Hero() {
   const midLayerRef = useRef<HTMLDivElement>(null);
   const frontLayerRef = useRef<HTMLDivElement>(null);
   const textRef = useRef<HTMLDivElement>(null);
+  const headingRef = useRef<HTMLHeadingElement>(null);
 
   useGSAP(
     () => {
@@ -23,6 +25,17 @@ export default function Hero() {
       //   smooth: 2,
       //   effects: true,
       // });
+
+      const split = new SplitText(headingRef.current, { type: "lines" });
+      gsap.from(split.lines, {
+        y: 100,
+        opacity: 0,
+        stagger: 0.4,
+        scrollTrigger: {
+          trigger: headingRef.current,
+          start: "bottom bottom",
+        },
+      });
 
       const tl = gsap.timeline({
         scrollTrigger: {
@@ -49,7 +62,7 @@ export default function Hero() {
           // ease: "power1.out",
           ease: "none",
         },
-        0
+        0,
       );
 
       // Front Layer
@@ -60,7 +73,7 @@ export default function Hero() {
           xPercent: 5,
           ease: "none",
         },
-        0
+        0,
       );
 
       // Text fade
@@ -71,10 +84,10 @@ export default function Hero() {
           y: -50,
           ease: "power2.inOut",
         },
-        0
+        0,
       );
     },
-    { scope: containerRef }
+    { scope: containerRef },
   );
 
   return (
@@ -131,7 +144,7 @@ export default function Hero() {
 
       {/* Minimal Editorial Text */}
       <div
-        ref={textRef}
+        ref={headingRef}
         className="absolute left-[15%] top-[65%] z-30 max-w-sm mix-blend-difference text-white"
       >
         <h1 className="text-5xl md:text-7xl font-light tracking-tighter leading-none opacity-100">
