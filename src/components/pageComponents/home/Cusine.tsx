@@ -91,7 +91,7 @@ export default function Cusine() {
     >
       {/* Subtle Background Detail */}
       <div className="absolute inset-0 opacity-60 pointer-events-none">
-        <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/clean-gray-paper.png')]" />
+        <div className="absolute inset-0 bg-[url('/images/clean-gray-paper.png')]" />
       </div>
 
       <h2 className="pb-25 tracking-tight leading-[1.1] italic text-transparent bg-clip-text bg-linear-to-r from-gray-600 via-gray-800 to-black text-center text-4xl md:text-7xl">
@@ -208,10 +208,10 @@ export default function Cusine() {
           </div>
           <div ref={contentRef} className="w-full md:w-[30%] space-y-6 pb-8">
             <span className="font-sans text-[10px] uppercase tracking-[0.4em] text-zinc-400 font-medium">
-              Section 01
+              Section 03
             </span>
             <h3 className="font-serif text-4xl md:text-6xl text-zinc-900 tracking-tight">
-              Irish
+              American
             </h3>
             <p className="font-sans text-zinc-500 text-xs md:text-sm tracking-[0.3em]">
               {cuisines[2].tagline}

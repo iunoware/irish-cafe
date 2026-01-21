@@ -99,7 +99,7 @@ export default function SignatureDishes() {
     >
       {/* Texture Background - Subtle and premium */}
       <div className="absolute inset-0 opacity-60 pointer-events-none">
-        <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/clean-gray-paper.png')]" />
+        <div className="absolute inset-0 bg-[url('/images/clean-gray-paper.png')]" />
       </div>
 
       <div className="max-w-7xl mx-auto">
