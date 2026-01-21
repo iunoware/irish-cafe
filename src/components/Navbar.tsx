@@ -71,7 +71,7 @@ export default function Navbar() {
               <Link
                 key={link.name}
                 href={link.href}
-                className={`font-sans font-medium text-[12px] uppercase tracking-[0.2em] transition-colors group relative ${
+                className={`font-sans z-50 font-medium text-[12px] uppercase tracking-[0.2em] transition-colors group relative ${
                   isScrolled ? "text-zinc-950" : "text-white/90 hover:text-zinc-300"
                 }`}
               >

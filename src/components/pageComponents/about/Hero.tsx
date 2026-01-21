@@ -21,16 +21,11 @@ export default function Hero() {
 
   useGSAP(
     () => {
-      // const smoother = ScrollSmoother.create({
-      //   smooth: 2,
-      //   effects: true,
-      // });
-
-      const split = new SplitText(headingRef.current, { type: "lines" });
-      gsap.from(split.lines, {
+      const split = new SplitText(headingRef.current, { type: "chars" });
+      gsap.from(split.chars, {
         y: 100,
         opacity: 0,
-        stagger: 0.4,
+        stagger: 0.03,
         scrollTrigger: {
           trigger: headingRef.current,
           start: "bottom bottom",
@@ -42,7 +37,6 @@ export default function Hero() {
           trigger: containerRef.current,
           start: "top top",
           end: "bottom top",
-          // markers: true,
           scrub: true,
         },
       });
@@ -55,11 +49,17 @@ export default function Hero() {
       });
 
       // Mid Layer
+      // gsap.from(midLayerRef.current, {
+      //   y: 200,
+      //   opacity: 0,
+      //   // scale: 1.5,
+      //   duration: 1,
+      // });
+
       tl.to(
         midLayerRef.current,
         {
           yPercent: -20,
-          // ease: "power1.out",
           ease: "none",
         },
         0,
@@ -120,7 +120,7 @@ export default function Hero() {
             src="/images/best-cafe-in-madurai.webp"
             alt="Interior Settings"
             fill
-            className="object-cover rounded-sm"
+            className="object-cover rounded-sm scale-105 hover:scale-100 transition-transition duration-500"
             priority
           />
         </div>
@@ -136,7 +136,7 @@ export default function Hero() {
             src="/images/the-irish-cafe-about-2.webp"
             alt="Artistic Detail"
             fill
-            className="object-cover rounded-sm"
+            className="object-cover rounded-sm scale-105 hover:scale-100 transition-transition duration-500"
             priority
           />
         </div>
