@@ -16,17 +16,16 @@
 }
 
 ::selection {
-  background-color: #0a0a0a;
+  background-color: black;
   color: white;
 }
 
 ::-moz-selection {
-  background-color: #000000;
+  background-color: black;
   color: white;
 }
 
 @layer base {
-
   h1,
   h2,
   h3,
