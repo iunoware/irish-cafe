@@ -25,7 +25,7 @@ const contents: Contents[] = [
   },
   {
     id: 2,
-    image: "/images/brand-essence-front.png",
+    image: "/images/best-cuisines-in-madurai.webp",
     alt: "Artisan Coffee Craft",
     heading: "Craft over trends.",
     content:
@@ -33,7 +33,7 @@ const contents: Contents[] = [
   },
   {
     id: 3,
-    image: "/images/about-hero-mid.png",
+    image: "/images/best-cafe-in-madurai.webp",
     alt: "Quiet Luxury Atmosphere",
     heading: "Culture over convenience.",
     content:
@@ -67,9 +67,10 @@ export default function WhyChooseUs() {
           y: 100,
           opacity: 0,
           duration: 1.5,
+          stagger: 0.3,
           scrollTrigger: {
             trigger: element,
-            start: "top 80%",
+            start: "top 65%",
           },
         });
       });
@@ -92,26 +93,17 @@ export default function WhyChooseUs() {
       // para
       gsap.utils.toArray(".paraReveal").forEach((el) => {
         const element = el as HTMLElement;
-        gsap.from(element, {
-          y: 200,
+        const split = new SplitText(element, { type: "words" });
+        gsap.from(split.words, {
+          y: 100,
           opacity: 0,
-          duration: 1.5,
+          stagger: 0.01,
+          scrollTrigger: {
+            trigger: element,
+            start: "top 80%",
+          },
         });
       });
-
-      // gsap.utils.toArray(".paraReveal").forEach((el) => {
-      //   const element = el as HTMLElement;
-      //   const split = new SplitText(element, { type: "lines" });
-      //   gsap.from(split.lines, {
-      //     y: 100,
-      //     opacity: 0,
-      //     stagger: 0.2,
-      //     scrollTrigger: {
-      //       trigger: element,
-      //       start: "top 80%",
-      //     },
-      //   });
-      // });
     },
     { scope: containerRef },
   );
@@ -154,7 +146,7 @@ export default function WhyChooseUs() {
           >
             <div
               // ref={imageContainerRef}
-              className="image-container-fade relative w-full md:w-[60%] aspect-4/3 md:aspect-16/10"
+              className="image-container-fade relative w-full lg:w-[60%] aspect-4/3 lg:aspect-16/10"
             >
               <Image
                 ref={imageRef}
@@ -165,7 +157,7 @@ export default function WhyChooseUs() {
               />
             </div>
             <div className="md:mt-12 max-w-md">
-              <h3 className="reveal text-2xl md:text-3xl font-normal text-black mb-2">
+              <h3 className="reveal text-2xl md:text-3xl wrap-break-words font-normal text-black mb-2">
                 {content.heading}
               </h3>
               <div className="w-8 h-px bg-white/20 mb-4" />

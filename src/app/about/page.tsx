@@ -9,11 +9,13 @@ import Menu from "@/components/pageComponents/about/Menu";
 export default function About() {
   return (
     <>
-      <Hero />
-      <BrandEssence />
-      <WhyChooseUs />
-      <Philosophy />
-      <Menu />
+      <section className="overflow-x-clip">
+        <Hero />
+        <BrandEssence />
+        <WhyChooseUs />
+        <Philosophy />
+        <Menu />
+      </section>
     </>
   );
 }

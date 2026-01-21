@@ -41,16 +41,19 @@ export default function BrandEssence() {
         },
       });
 
-      // line by line animation for paragraph
-      const paraSplit = new SplitText(paraRef.current, { type: "lines" });
-      gsap.from(paraSplit.lines, {
-        y: 100,
-        opacity: 0,
-        stagger: 0.2,
-        scrollTrigger: {
-          trigger: paraRef.current,
-          start: "top 80%",
-        },
+      // para word by word animation
+      gsap.utils.toArray(paraRef.current).forEach((el) => {
+        const element = el as HTMLElement;
+        const split = new SplitText(element, { type: "words" });
+        gsap.from(split.words, {
+          y: 100,
+          opacity: 0,
+          stagger: 0.01,
+          scrollTrigger: {
+            trigger: element,
+            start: "top 80%",
+          },
+        });
       });
 
       const split = new SplitText([headingRef.current, spanRef.current], {
@@ -100,7 +103,7 @@ export default function BrandEssence() {
         </div>
 
         {/* right text */}
-        <div className="relative w-full md:w-[30%] flex flex-col justify-center px-8 py-16 md:px-12 lg:px-16 space-y-8 md:space-y-12">
+        <div className="relative w-full md:w-[45%] flex flex-col justify-center px-8 py-16 md:px-12 lg:px-16 space-y-8 md:space-y-12">
           <div className="w-12 h-px hidden md:block" />
 
           <div className="space-y-6">
@@ -133,9 +136,9 @@ export default function BrandEssence() {
           </div>
 
           {/* Optional: Very subtle background branding element */}
-          <div className="absolute bottom-4 right-4 text-[10rem] leading-none font-bold text-white/5 pointer-events-none select-none overflow-hidden -z-10 hidden lg:block">
+          {/* <div className="absolute bottom-4 right-4 text-[10rem] leading-none font-bold text-white/5 pointer-events-none select-none overflow-hidden -z-10 hidden lg:block">
             IC
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

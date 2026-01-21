@@ -24,6 +24,21 @@ export default function Philosophy() {
         },
       });
 
+      // para reveal
+      gsap.utils.toArray(".paraReveal").forEach((el) => {
+        const element = el as HTMLElement;
+        const split = new SplitText(element, { type: "words" });
+        gsap.from(split.words, {
+          y: 100,
+          opacity: 0,
+          stagger: 0.01,
+          scrollTrigger: {
+            trigger: element,
+            start: "top 80%",
+          },
+        });
+      });
+
       // text animation by line by line
       gsap.utils.toArray(".text-reveal").forEach((el) => {
         const element = el as HTMLElement;
@@ -83,14 +98,14 @@ export default function Philosophy() {
             </h2>
 
             <div className="space-y-8">
-              <p className="text-reveal text-neutral-800 text-base md:text-lg leading-relaxed font-light">
+              <p className="paraReveal text-neutral-800 text-base md:text-lg leading-relaxed font-light">
                 We do not chase the new. We refine the necessary. In a world that often
                 values speed over substance, we have chosen a different path—one where
                 every detail is weighed, measured, and considered before it ever reaches
                 your table.
               </p>
 
-              <p className="text-reveal text-neutral-800 text-base md:text-lg leading-relaxed font-light">
+              <p className="paraReveal text-neutral-800 text-base md:text-lg leading-relaxed font-light">
                 From the acoustic balance of our spaces to the texture of the ceramic in
                 your hand, nothing is accidental. We believe that true luxury lies not in
                 excess, but in the complete absence of noise.
@@ -98,7 +113,7 @@ export default function Philosophy() {
             </div>
 
             <div className="mt-16 pt-8 border-t border-neutral-200">
-              <p className="text-sm font-medium tracking-widest uppercase text-neutral-500">
+              <p className="paraReveal text-sm font-medium tracking-widest uppercase text-neutral-500">
                 The Irish Cafe Philosophy
               </p>
             </div>
