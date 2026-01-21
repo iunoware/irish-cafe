@@ -12,43 +12,50 @@ export default function BrandEssence() {
   const headingRef = useRef<HTMLHeadingElement>(null);
   const spanRef = useRef<HTMLSpanElement>(null);
   const paraRef = useRef<HTMLParagraphElement>(null);
+  const imageContainerRef = useRef<HTMLDivElement>(null);
 
   useGSAP(
     () => {
-      // const tl = gsap.timeline({
-      //   scrollTrigger: {
-      //     trigger: containerRef.current,
-      //     start: "top top",
-      //     end: "bottom top",
-      //     scrub: true,
-      //   },
-      // });
-
-      // tl.to([imageRef.current, bgRef.current], {
-      //   y: "15%",
-      // });
-
-      // gsap.from(spanRef.current, {
-      //   y: 100,
-      //   opacity: 0,
-      //   scrollTrigger: {
-      //     trigger: spanRef.current,
-      //     start: "top 65%",
-      //   },
-      // });
-
-      const split = new SplitText([headingRef.current, paraRef.current], {
-        type: "lines",
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: containerRef.current,
+          start: "top top",
+          end: "bottom top",
+          scrub: true,
+        },
       });
-      // gsap.from(split.lines, {
-      //   y: 100,
-      //   opacity: 0,
-      //   stagger: 0.4,
-      //   scrollTrigger: {
-      //     trigger: headingRef.current,
-      //     start: "top 65%",
-      //   },
-      // });
+
+      // image parallax
+      tl.to([imageRef.current, bgRef.current], {
+        y: "15%",
+      });
+
+      // image container fade in animation
+      gsap.from(imageContainerRef.current, {
+        y: 100,
+        opacity: 0,
+        duration: 1.5,
+        scrollTrigger: {
+          trigger: imageContainerRef.current,
+          start: "top 80%",
+        },
+      });
+
+      // line by line animation for paragraph
+      const paraSplit = new SplitText(paraRef.current, { type: "lines" });
+      gsap.from(paraSplit.lines, {
+        y: 100,
+        opacity: 0,
+        stagger: 0.2,
+        scrollTrigger: {
+          trigger: paraRef.current,
+          start: "top 80%",
+        },
+      });
+
+      const split = new SplitText([headingRef.current, spanRef.current], {
+        type: "chars",
+      });
 
       const textTl = gsap.timeline({
         scrollTrigger: {
@@ -57,22 +64,15 @@ export default function BrandEssence() {
         },
       });
 
-      textTl
-        .from(spanRef.current, {
-          y: 40,
+      textTl.from(
+        split.chars,
+        {
+          y: 80,
           opacity: 0,
-          duration: 0.3,
-        })
-        .from(
-          split.lines,
-          {
-            y: 80,
-            opacity: 0,
-            stagger: 0.25,
-            duration: 0.3,
-          },
-          "-=0.1",
-        );
+          stagger: 0.03,
+        },
+        "-=0.1",
+      );
     },
     { scope: containerRef },
   );
@@ -84,7 +84,10 @@ export default function BrandEssence() {
       </div>
       <div className="flex flex-col-reverse md:flex-row-reverse w-full h-screen">
         {/* left image */}
-        <div className="relative w-full h-screen rounded-tl-sm rounded-bl-sm md:h-auto overflow-hidden">
+        <div
+          ref={imageContainerRef}
+          className="relative w-full h-screen rounded-tl-sm rounded-bl-sm md:h-auto overflow-hidden"
+        >
           {/* <div className="absolute inset-0 "> */}
           <Image
             ref={imageRef}
