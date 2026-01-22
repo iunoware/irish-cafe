@@ -11,28 +11,28 @@ gsap.registerPlugin(ScrollTrigger);
 const dishes = [
   {
     name: "Classic Irish Stew",
-    image: "/images/signature/stew.png",
+    image: "/images/DSC00130.JPG",
     containerStyle: "w-full md:w-[60%] ml-0 mr-auto",
     aspectRatio: "aspect-[4/5] md:aspect-[16/10]",
     zIndex: "z-10",
   },
   {
     name: "Truffle Tagliatelle",
-    image: "/images/signature/pasta.png",
+    image: "/images/best-cuisines-in-madurai.webp",
     containerStyle: "w-[85%] md:w-[42%] ml-auto mr-0 md:-mt-[15%] relative",
     aspectRatio: "aspect-[4/5]",
     zIndex: "z-20",
   },
   {
     name: "Dry-Aged Wagyu",
-    image: "/images/signature/steak.png",
+    image: "/images/DSC00126.JPG",
     containerStyle: "w-full  md:w-[55%] mx-auto md:-mt-[10%]",
     aspectRatio: "aspect-[16/9]",
     zIndex: "z-10",
   },
   {
     name: "Brownie with Ice cream",
-    image: "/images/signature/DSC01476.JPG",
+    image: "/images/DSC01471.JPG",
     containerStyle:
       "w-[75%] md:w-[32%] ml-[10%] object-right mr-auto md:ml-auto md:mr-[8%] md:-mt-[18%]",
     aspectRatio: "aspect-square",
@@ -144,7 +144,7 @@ export default function SignatureDishes() {
               <div className="dish-text mt-8 flex items-center justify-between md:justify-start gap-6 opacity-0">
                 <div className="flex  items-center gap-4">
                   <span
-                    className={`${index == 1 ? "bg-clip-text text-transparent bg-linear-to-r from-50%  from-white to-black" : "text-black"} font-serif mix-blend-difference text-[10px] md:text-xl uppercase tracking-[0.4em] font-light`}
+                    className={`${index == 1 ? "text-black md:bg-clip-text md:text-transparent md:bg-linear-to-r from-50%  from-white to-black" : "text-black"} font-serif mix-blend-difference text-[10px] md:text-xl uppercase tracking-[0.4em] font-light`}
                   >
                     {dish.name}
                   </span>

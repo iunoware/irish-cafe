@@ -5,12 +5,13 @@ import SignatureDishes from "../components/pageComponents/home/SignatureDishes";
 import AboutTeaser from "../components/pageComponents/home/AboutTeaser";
 import Ambience from "../components/pageComponents/home/Ambience";
 import WelcomeBoard from "../components/pageComponents/home/WelcomeBoard";
-import CuisineTransition from "../components/pageComponents/home/CuisineTransition";
+import TestimonialReel from "@/components/pageComponents/home/TestimonialReel";
+import CelebrateWithUs from "@/components/pageComponents/home/CelebrateWithUs";
 
 export default function Home() {
   return (
     <main className="relative min-h-screen">
-      <div className="absolute inset-0 opacity-80 pointer-events-none">
+      <div className="absolute inset-0 opacity-60 pointer-events-none">
         <div className="absolute inset-0 bg-[url('/images/clean-gray-paper.png')]" />
       </div>
       <Hero />
@@ -19,8 +20,9 @@ export default function Home() {
       <SignatureDishes />
       <AboutTeaser />
       <Ambience />
+      <CelebrateWithUs />
+      <TestimonialReel />
       <WelcomeBoard />
-      {/* <CuisineTransition /> */}
     </main>
   );
 }

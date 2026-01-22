@@ -33,7 +33,7 @@ export default function Cusine() {
     {
       name: "American",
       tagline: "BOLD MODERN SPIRIT",
-      image: "/images/american.JPG",
+      image: "/images/DSC00125.JPG",
       layout: "centered-overlap",
     },
   ];

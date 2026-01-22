@@ -10,19 +10,20 @@ gsap.registerPlugin(ScrollTrigger);
 
 const CHEFS_PICKS = [
   {
-    name: "Aged Irish Steak",
-    description: "Premium cuts aged for 28 days, served with seasonal roots.",
-    src: "/images/signature/steak.png",
+    name: "Wood Fire Pizza",
+    description: "Nothing Beats the Crisp, Charred Crust of a wood.",
+    src: "/images/DSC00139.JPG",
   },
   {
-    name: "Hearty Lamb Stew",
-    description: "A slow-cooked heritage recipe with local farm vegetables.",
-    src: "/images/signature/stew.png",
+    name: "Cocktail Prawns ",
+    description: "Dive into luxury with our Cocktail Prawns.",
+    src: "/images/DSC00161.JPG",
   },
   {
-    name: "Signature Dessert",
-    description: "Handcrafted seasonal treat finished with house-made cream.",
-    src: "/images/signature/dessert.JPG",
+    name: "Tuscan Cheesy Chicken",
+    description:
+      "Peri-peri Crumbed Chicken Smothered in a molten Cheesy Sauce.",
+    src: "/images/somethinggood.jpeg",
   },
 ];
 

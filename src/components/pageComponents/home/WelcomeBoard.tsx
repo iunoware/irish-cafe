@@ -231,7 +231,7 @@ export default function WelcomeBoard() {
 
       {/* Ground Level Branding */}
       <div className="absolute bottom-12 left-0 right-0 text-center">
-        <span className="font-sans text-[8px] uppercase tracking-[0.9em] text-zinc-300">
+        <span className="font-sans text-[8px] uppercase tracking-[0.9em] text-zinc-800">
           The Irish Cafe — Heritage
         </span>
       </div>
