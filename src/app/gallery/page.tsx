@@ -1,7 +1,8 @@
 import Hero from "@/components/pageComponents/gallery/Hero";
 import SpaceGallery from "@/components/pageComponents/gallery/SpaceGallery";
 import FoodGallery from "@/components/pageComponents/gallery/FoodGallery";
-import PeopleGallery from "@/components/pageComponents/gallery/PeopleGallery";
+import DessertGallery from "@/components/pageComponents/gallery/DessertGallery";
+import WelcomeBoard from "@/components/pageComponents/home/WelcomeBoard";
 
 export default function Gallery() {
   return (
@@ -9,7 +10,8 @@ export default function Gallery() {
       <Hero />
       <SpaceGallery />
       <FoodGallery />
-      <PeopleGallery />
+      <DessertGallery />
+      <WelcomeBoard />
     </>
   );
 }
