@@ -36,16 +36,16 @@ const HIGHLIGHTS = [
         dish: "white sauce pasta",
       },
       {
-        src: "/images/irish.JPG",
+        src: "/images/DSC00126.JPG",
         span: "col-span-2 row-span-1",
         alt: "Traditional Irish Stew",
         dish: "Lamb Dish",
       },
       {
-        src: "/images/italian.JPG",
+        src: "/images/good-1.jpeg",
         span: "col-span-1 row-span-1",
         alt: "House-made pasta",
-        dish: "Red Sauce Pasta",
+        dish: "Loaded Potatoes",
       },
       {
         src: "/images/DSC00130.JPG",
@@ -59,16 +59,16 @@ const HIGHLIGHTS = [
     category: "Bakery & Desserts",
     items: [
       {
-        src: "/images/DSC01471.JPG",
+        src: "/images/des-1.jpeg",
         span: "col-span-2 row-span-2",
         alt: "Handcrafted dessert",
-        dish: "Brownie",
+        dish: "Hazelnut Chocolate Pie",
       },
       {
-        src: "/images/DSC01476.JPG",
-        span: "col-span-2 row-span-1",
+        src: "/images/cheeseCake.heic",
+        span: "col-span-1 row-span-1",
         alt: "Freshly baked pastries",
-        dish: "Brownie with Ice-cream",
+        dish: "Cheese Cake",
       },
     ],
   },

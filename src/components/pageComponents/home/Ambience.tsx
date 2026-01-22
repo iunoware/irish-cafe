@@ -152,7 +152,7 @@ export default function Ambience() {
               </div>
               <div className="side-image rounded-sm w-full aspect-3/4 relative overflow-hidden shadow-2xl opacity-0 -mt-12">
                 <Image
-                  src="/images/DSC01328.JPG"
+                  src="/images/DSC00073.JPG"
                   alt="Atmospheric Lighting"
                   fill
                   className="object-cover hover:scale-105 transition-transform duration-1000"

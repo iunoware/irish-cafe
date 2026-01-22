@@ -36,16 +36,16 @@ export default function Philosophy() {
   );
 
   return (
-    <section ref={sectionRef} className="relative bg-white py-24 md:py-48 px-6">
+    <section ref={sectionRef} className="relative bg-white py-24 md:py-28 px-6">
       {/* Subtle Background Texture - Grainy effect using CSS-only approach if possible, or just clean zinc */}
       <div className="absolute inset-0 opacity-60 pointer-events-none">
         <div className="absolute inset-0 bg-[url('/images/clean-gray-paper.png')]" />
       </div>
 
       <div className="max-w-7xl mx-auto">
-        <div className="flex flex-col md:flex-row items-stretch gap-16 md:gap-0 relative">
+        <div className="flex flex-col md:flex-col lg:flex-row items-stretch gap-16 md:gap-0 relative">
           {/* Large Dominant Image Area - Occupies major visual weight */}
-          <div className="w-full md:w-[65%] relative z-10">
+          <div className="w-full md:w-full lg:w-[65%] z-10">
             <div
               ref={imageRef}
               className="aspect-4/5 md:aspect-16/11 relative overflow-hidden group"
@@ -70,10 +70,10 @@ export default function Philosophy() {
           </div>
 
           {/* Calm Editorial Text Block - Layered/Paired transition */}
-          <div className="w-full md:w-[45%] md:absolute md:right-0 md:top-1/2 md:-translate-y-1/2 z-20 md:pl-24">
+          <div className="w-full md:w-full lg:w-[55%] lg:absolute md:right-0 md:top-1/2 md:-translate-y-1/2 z-20 md:pl-24">
             <div
               ref={contentRef}
-              className="bg-white md:p-16 space-y-8 md:shadow-[40px_40px_80px_rgba(0,0,0,0.03)] border-zinc-100"
+              className="bg-white p-5 md:p-16 space-y-8 md:shadow-[40px_40px_80px_rgba(0,0,0,0.03)] border-zinc-100"
             >
               <div className="space-y-6">
                 <span className="hidden md:block font-sans text-[10px] md:text-xs uppercase tracking-[0.4em] text-zinc-400 font-medium">

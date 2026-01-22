@@ -25,7 +25,7 @@ const MenuCTA = () => {
           opacity: 1,
           scale: 1,
           y: 0,
-          duration: 1.5,
+          duration: 1,
           ease: "power2.out",
           scrollTrigger: {
             trigger: containerRef.current,

@@ -122,21 +122,25 @@ export default function Footer() {
             No Ordinary Dining.
           </h2>
           <div className="flex flex-row md:flex-row items-center gap-4 md:gap-8 text-[10px] uppercase tracking-[0.2em] text-zinc-400">
-            <p>© {currentYear} Iunoware Pvt Ltd. All Rights Reserved.</p>
+            <p>
+              © {currentYear}{" "}
+              <a
+                href="https://www.iunoware.com/"
+                target="_blank"
+                className="font-bold font-sans "
+              >
+                Iunoware Pvt Ltd.
+              </a>{" "}
+              All Rights Reserved.
+            </p>
             <div className="hidden md:block w-px h-3 bg-zinc-200" />
             <div className="flex items-center gap-6">
-              <Link
-                href="/privacy"
-                className="hover:text-zinc-600 transition-colors"
-              >
+              <p className="hover:text-zinc-600 transition-colors">
                 Privacy Policy
-              </Link>
-              <Link
-                href="/terms"
-                className="hover:text-zinc-600 transition-colors"
-              >
+              </p>
+              <p className="hover:text-zinc-600 transition-colors">
                 Terms of Service
-              </Link>
+              </p>
             </div>
           </div>
         </div>

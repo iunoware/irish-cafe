@@ -87,7 +87,7 @@ export default function Hero() {
           priority
         />
         {/* Editorial Overlay */}
-        {/* <div className="absolute inset-0 bg-black/20" /> */}
+        <div className="absolute inset-0 block md:hidden bg-black/30" />
       </div>
       {/* <div className="absolute inset-0">
         <Image
@@ -125,13 +125,24 @@ export default function Hero() {
           </p>
         </div>
 
-        <div className="md:pt-8 animate-fade-in animation-delay-1000">
+        <div className="md:pt-8 flex gap-10 animate-fade-in animation-delay-1000">
           <a
-            href="/menu"
-            className="inline-block group relative font-sans text-[11px] uppercase tracking-[0.3em] py-4 px-10 border border-white/30 hover:border-white transition-all duration-500 overflow-hidden"
+            target="_blank"
+            href="https://www.google.com/maps/reserve/v/dine/c/8CBFs_l4fvM?source=pa&opi=89978449&hl=en-IN&gei=yvNxacS3E6aMnesPrsafqQc&sourceurl=https://www.google.com/search?gs_ssp%3DeJzj4tVP1zc0LE7OKqqoLDA3YLRSNagwTjIwSDZNszQ1SzNNTU42tjKosDQxMza2NEs0Nk8xTjW2SPISyizKLM5QSE5MS1XITUwpLUrMBAApqRZs%26q%3Dirish%2Bcafe%2Bmadurai%26oq%3Dirish%2Bcafe%26gs_lcrp%3DEgZjaHJvbWUqDQgBEC4YrwEYxwEYgAQyCQgAEEUYORiABDINCAEQLhivARjHARiABDIHCAIQABiABDIHCAMQABiABDIHCAQQABiABDIHCAUQABiABDIHCAYQABiABDIHCAcQABiABDIHCAgQABiABDIHCAkQABiABNIBCTkwMzZqMGoxNagCCLACAfEFLCjrNoRidPrxBSwo6zaEYnT6%26sourceid%3Dchrome%26ie%3DUTF-8"
+            className="inline-block group relative font-sans text-[11px] bg-white uppercase tracking-[0.3em] py-2 px-4 md:py-4 md:px-10 border border-white/30 hover:border-black transition-all duration-500 overflow-hidden"
+          >
+            <span className="relative z-10 text-black  group-hover:text-white transition-colors duration-500">
+              Reserve a table
+            </span>
+            <div className="absolute inset-0 bg-black translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-[cubic-bezier(0.19,1,0.22,1)]" />
+          </a>
+          <a
+            href="https://www.zomato.com/madurai/the-irish-cafe-kk-nagar"
+            target="_blank"
+            className="inline-block h-fit w-fit group relative font-sans text-[11px] uppercase tracking-[0.3em] py-2 px-4 md:py-4 md:px-10 border border-white/30 hover:border-white transition-all duration-500 overflow-hidden"
           >
             <span className="relative z-10 group-hover:text-black transition-colors duration-500">
-              View Menu
+              Order Online
             </span>
             <div className="absolute inset-0 bg-white translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-[cubic-bezier(0.19,1,0.22,1)]" />
           </a>
