@@ -96,7 +96,7 @@ export default function DessertGallery() {
       <div className="container mx-auto px-6 md:px-12 lg:px-24">
         {/* Editorial Heading Block */}
         <div className="mb-20 md:mb-32 max-w-sm">
-          <h2 className="text-reveal text-3xl md:text-4xl font-serif font-light tracking-tight text-neutral-900 mb-6 transition-all duration-700">
+          <h2 className="text-reveal text-3xl md:text-4xl font-serif font-light tracking-tight text-neutral-900 mb-6">
             Desserts & Details
           </h2>
           <div className="text-reveal w-12 h-px bg-neutral-300 mb-6"></div>
