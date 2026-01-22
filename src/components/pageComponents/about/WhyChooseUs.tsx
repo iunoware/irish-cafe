@@ -114,9 +114,9 @@ export default function WhyChooseUs() {
       className="relative w-full text-black py-32 md:py-48 px-6 md:px-12 lg:px-24"
     >
       {/* bg texture */}
-      <div className="absolute inset-0 opacity-80 pointer-events-none z-0">
+      {/* <div className="absolute inset-0 opacity-80 pointer-events-none z-0">
         <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/xv.png')] " />
-      </div>
+      </div> */}
 
       {/* heading */}
       <div className="max-w-4xl mx-auto mb-32 md:mb-48">
