@@ -82,9 +82,11 @@ export default function BrandEssence() {
 
   return (
     <section ref={containerRef} className="relative w-full overflow-clip pt-20">
-      <div ref={bgRef} className="absolute inset-0 opacity-80 pointer-events-none z-0">
+      {/* bg texture */}
+      {/* <div ref={bgRef} className="absolute inset-0 opacity-80 pointer-events-none z-0">
         <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/xv.png')] " />
-      </div>
+      </div> */}
+
       <div className="flex flex-col-reverse md:flex-row-reverse w-full h-screen">
         {/* left image */}
         <div

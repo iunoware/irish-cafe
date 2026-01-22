@@ -70,9 +70,9 @@ export default function Philosophy() {
   return (
     <section ref={containerRef} className="w-full relative text-black py-24 md:py-40">
       {/* bg texture */}
-      <div className="absolute inset-0 opacity-80 pointer-events-none z-0">
+      {/* <div className="absolute inset-0 opacity-80 pointer-events-none z-0">
         <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/xv.png')] " />
-      </div>
+      </div> */}
 
       <div className="container mx-auto px-6 md:px-12 lg:px-24">
         <div className="flex flex-col lg:flex-row items-center lg:items-end gap-16 lg:gap-24">
@@ -82,7 +82,7 @@ export default function Philosophy() {
             className="w-full lg:w-7/12 relative aspect-4/5 md:aspect-3/4 lg:aspect-4/5"
           >
             <Image
-              src="/images/DSC01412.jpg"
+              src="/images/thought-before-trend.webp"
               alt="Atmospheric corner of The Irish Cafe"
               fill
               className="object-cover grayscale-0"
