@@ -22,6 +22,7 @@ const peopleImages = [
     alt: "Guest enjoying a moment",
     className: "md:col-span-4 md:row-span-1",
     aspect: "aspect-square md:aspect-auto md:h-full",
+    dishName: "Hazelnut Chocolate Pie",
   },
   // 2
   {
@@ -29,6 +30,7 @@ const peopleImages = [
     alt: "Quiet conversation",
     className: "md:col-span-4 md:row-span-1",
     aspect: "aspect-square md:aspect-auto md:h-full",
+    dishName: "Magic Chocolate Cake",
   },
   // 3
   {
@@ -36,22 +38,41 @@ const peopleImages = [
     alt: "Barista detail",
     className: "md:col-span-4 md:row-span-2",
     aspect: "aspect-[3/4] md:aspect-auto md:h-full",
+    dishName: "Cheese Cake",
   },
   // 4
   {
-    src: "/images/pannacotta.webp",
+    src: "/images/thought-before-trend.webp",
     alt: "Shared laughter",
-    className: "md:col-span-5 md:row-span-1",
-    aspect: "aspect-video md:aspect-auto md:h-full",
+    className: "md:col-span-4 md:row-span-2",
+    aspect: "aspect-[3/4] md:aspect-auto md:h-full",
+    dishName: "Watermelon Mojito",
   },
   // 5
   {
     src: "/images/shamrock-milkshake.jpeg",
     alt: "Soft interaction",
-    className: "md:col-span-3 md:row-span-1",
+    className: "md:col-span-4 md:row-span-1",
     aspect: "aspect-square md:aspect-auto md:h-full",
+    dishName: "Shamrock Milk shake",
   },
+
   // 6
+  {
+    src: "/images/pannacotta.webp",
+    alt: "Guest enjoying a moment",
+    className: "md:col-span-4 md:row-span-1",
+    aspect: "aspect-square md:aspect-auto md:h-full",
+    dishName: "Pannacotta",
+  },
+  // 7
+  {
+    src: "/images/drink-3.jpg",
+    alt: "Guest enjoying a moment",
+    className: "md:col-span-4 md:row-span-1",
+    aspect: "aspect-square md:aspect-auto md:h-full",
+    dishName: "Blue Pea Flower Tea",
+  },
 ];
 
 export default function DessertGallery() {
@@ -97,7 +118,7 @@ export default function DessertGallery() {
         {/* Editorial Heading Block */}
         <div className="mb-20 md:mb-32 max-w-sm">
           <h2 className="text-reveal text-3xl md:text-4xl font-serif font-light tracking-tight text-neutral-900 mb-6">
-            Desserts & Details
+            Desserts & Drinks
           </h2>
           <div className="text-reveal w-12 h-px bg-neutral-300 mb-6"></div>
           <p className="text-reveal text-sm md:text-base font-sans tracking-wide text-neutral-500 font-light leading-relaxed uppercase">
@@ -121,6 +142,9 @@ export default function DessertGallery() {
                   className="object-cover rounded-md transition-all duration-1000 group-hover:scale-105 "
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
+              </div>
+              <div className="absolute inset-0 text-white flex justify-start items-end p-4 uppercase tracking-widest bg-linear-to-t from-black/30 to-transparent transition-all duration-300 opacity-0 group-hover:opacity-100">
+                <h3>{img.dishName}</h3>
               </div>
             </div>
           ))}

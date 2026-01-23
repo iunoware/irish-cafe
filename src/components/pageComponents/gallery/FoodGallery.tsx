@@ -51,15 +51,15 @@ const foodImages = [
   },
   // 6
   {
-    src: "/images/DSC01476.JPG",
+    src: "/images/DSC00139.JPG",
     alt: "Texture and taste",
-    dishName: "dish-6",
+    dishName: "Wood Fire Pizza",
     className: "md:col-span-3 md:row-span-1",
     aspect: "aspect-square md:aspect-auto md:h-full",
   },
   // 7
   {
-    src: "/images/italian.JPG",
+    src: "/images/italian.jpg",
     alt: "Italian heritage",
     dishName: "dish-7",
     className: "md:col-span-4 md:row-span-1",
@@ -67,7 +67,7 @@ const foodImages = [
   },
   // 8
   {
-    src: "/images/american.JPG",
+    src: "/images/american.jpg",
     alt: "American bold flavors",
     dishName: "dish-8",
     className: "md:col-span-4 md:row-span-1",
@@ -215,7 +215,7 @@ export default function FoodGallery() {
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
               </div>
-              <div className="absolute inset-0 flex justify-start items-end p-4 uppercase tracking-widest bg-linear-to-t from-black/30 to-transparent transition-all duration-300 opacity-0 group-hover:opacity-100">
+              <div className="absolute inset-0 text-white flex justify-start items-end p-4 uppercase tracking-widest bg-linear-to-t from-black/30 to-transparent transition-all duration-300 opacity-0 group-hover:opacity-100">
                 <h3>{img.dishName}</h3>
               </div>
             </div>

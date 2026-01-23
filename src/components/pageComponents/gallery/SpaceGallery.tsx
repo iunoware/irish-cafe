@@ -46,7 +46,7 @@ const images = [
   },
   // 7
   {
-    src: "/images/DSC01466.JPG",
+    src: "/images/DSC01466.jpg",
     alt: "Architectural detail",
     className: "md:col-span-3 md:row-span-2",
     aspect: "aspect-[2/3] md:aspect-auto md:h-full",

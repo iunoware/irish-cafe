@@ -85,7 +85,10 @@ export default function Menu() {
   );
 
   return (
-    <section ref={containerRef} className="relative w-full text-black py-24 md:py-40">
+    <section
+      ref={containerRef}
+      className="relative w-full text-black py-24 md:py-40"
+    >
       {/* bg texture */}
       {/* <div className="absolute inset-0 opacity-80 pointer-events-none z-0">
         <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/xv.png')] " />
@@ -99,9 +102,10 @@ export default function Menu() {
               A Thoughtful <br /> Menu
             </h2>
             <p className="paraReveal text-neutral-800 text-base md:text-lg font-light leading-relaxed max-w-md">
-              This is not about variety. It is about coherence. Whether it is an Irish
-              staple or an Italian classic, the approach remains the same: respect the
-              origin, refine the preparation, and trust the ingredient.
+              This is not about variety. It is about coherence. Whether it is an
+              Irish staple or an Italian classic, the approach remains the same:
+              respect the origin, refine the preparation, and trust the
+              ingredient.
             </p>
           </div>
         </div>
@@ -111,7 +115,7 @@ export default function Menu() {
           <div className="w-full md:w-6/12 ">
             <div className="image-container-fade rounded-md relative w-full max-w-3xl lg:max-w-4xl xl:max-w-5xl aspect-video mx-auto">
               <Image
-                src="/images/italian.JPG"
+                src="/images/italian.jpg"
                 alt="Italian cuisine details"
                 fill
                 className="object-cover rounded-md"
@@ -126,7 +130,8 @@ export default function Menu() {
                 Italian Roots
               </h3>
               <p className="paraReveal text-md md:text-xl font-light text-neutral-800 leading-snug">
-                Simple ingredients, guided by intention and demanding complete honesty.
+                Simple ingredients, guided by intention and demanding complete
+                honesty.
               </p>
             </div>
           </div>
@@ -137,7 +142,7 @@ export default function Menu() {
           <div className="w-full md:w-6/12">
             <div className="image-container-fade rounded-md relative w-full max-w-3xl lg:max-w-4xl xl:max-w-5xl aspect-video mx-auto">
               <Image
-                src="/images/irish.JPG"
+                src="/images/irish.jpg"
                 alt="Authentic Irish warmth"
                 fill
                 className="object-cover rounded-md"
@@ -152,8 +157,8 @@ export default function Menu() {
                 Irish Heritage
               </h3>
               <p className="paraReveal text-md md:text-xl font-light text-neutral-800 leading-snug">
-                Authenticity isn&apos;t about rigid tradition. It represents the spirit of
-                a place.
+                Authenticity isn&apos;t about rigid tradition. It represents the
+                spirit of a place.
               </p>
             </div>
           </div>
@@ -164,7 +169,7 @@ export default function Menu() {
           <div className="w-full md:w-6/12">
             <div className="image-container-fade rounded-md relative w-full max-w-3xl lg:max-w-4xl xl:max-w-5xl aspect-video mx-auto">
               <Image
-                src="/images/DSC00125.JPG"
+                src="/images/DSC00125.jpg"
                 alt="American comfort food"
                 fill
                 className="object-cover rounded-md"
@@ -178,8 +183,8 @@ export default function Menu() {
               American Classic
             </h3>
             <p className="paraReveal text-md md:text-xl font-light text-neutral-800">
-              Comfort that feels earned, not engineered. A balance of bold flavors and
-              careful restraint.
+              Comfort that feels earned, not engineered. A balance of bold
+              flavors and careful restraint.
             </p>
           </div>
         </div>

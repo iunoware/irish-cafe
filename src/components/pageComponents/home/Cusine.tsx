@@ -21,19 +21,19 @@ export default function Cusine() {
     {
       name: "Irish",
       tagline: "AUTHENTIC COMFORT",
-      image: "/images/irish.JPG",
+      image: "/images/irish.jpg",
       layout: "large-left",
     },
     {
       name: "Italian",
       tagline: "REFINED CLASSICS",
-      image: "/images/italian.JPG",
+      image: "/images/italian.jpg",
       layout: "offset-right",
     },
     {
       name: "American",
       tagline: "BOLD MODERN SPIRIT",
-      image: "/images/DSC00125.JPG",
+      image: "/images/DSC00125.jpg",
       layout: "centered-overlap",
     },
   ];
@@ -110,7 +110,7 @@ export default function Cusine() {
                 src={cuisines[0].image}
                 alt="Irish Cuisine"
                 fill
-                className="object-cover brightness-[0.9] scale-105 hover:scale-100 transition-transform duration-1000"
+                className="object-cover scale-105 hover:scale-100 transition-transform duration-1000"
               />
               {/* <div className="absolute inset-0 bg-black/5" /> */}
             </div>

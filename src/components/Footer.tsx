@@ -94,7 +94,7 @@ export default function Footer() {
               </h4>
               <nav className="flex flex-col space-y-4 text-sm">
                 <a
-                  href="https://www.instagram.com/theirishcafe_madurai/"
+                  href="https://www.instagram.com/theirish.cafe?igsh=cTB2N3lvYWs1YjMw"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-white text-white/80 transition-colors w-fit flex items-center gap-2 group"
