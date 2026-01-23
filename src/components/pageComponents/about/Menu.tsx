@@ -63,7 +63,7 @@ export default function Menu() {
 
       const panels = gsap.utils.toArray(".panel");
 
-      const totalPanels = 4;
+      const totalPanels = 4.2;
 
       gsap.to(panels, {
         xPercent: -100 * (totalPanels - 1),
@@ -109,12 +109,12 @@ export default function Menu() {
         {/* Row 1 */}
         <div className="flex panel flex-col md:flex-row h-full w-screen items-center justify-start gap-8 md:gap-16 pl-0 md:pl-12">
           <div className="w-full md:w-6/12 ">
-            <div className="image-container-fade relative w-full max-w-3xl lg:max-w-4xl xl:max-w-5xl aspect-video mx-auto">
+            <div className="image-container-fade rounded-md relative w-full max-w-3xl lg:max-w-4xl xl:max-w-5xl aspect-video mx-auto">
               <Image
                 src="/images/italian.JPG"
                 alt="Italian cuisine details"
                 fill
-                className="object-cover"
+                className="object-cover rounded-md"
                 sizes="(max-width: 768px) 100vw, 50vw"
               />
             </div>
@@ -122,7 +122,7 @@ export default function Menu() {
 
           <div className="w-full md:w-5/12 flex flex-col items-start text-left md:pb-12">
             <div className="max-w-xs">
-              <h3 className="reveal block text-lg font-bold tracking-widest text-black uppercase mb-4">
+              <h3 className="reveal block text-2xl font-bold tracking-widest text-black uppercase mb-4">
                 Italian Roots
               </h3>
               <p className="paraReveal text-md md:text-xl font-light text-neutral-800 leading-snug">
@@ -135,12 +135,12 @@ export default function Menu() {
         {/* Row 2*/}
         <div className="flex panel flex-col h-full w-screen md:flex-row items-center gap-8 md:gap-16 pl-0 md:pl-12">
           <div className="w-full md:w-6/12">
-            <div className="image-container-fade relative w-full max-w-3xl lg:max-w-4xl xl:max-w-5xl aspect-video mx-auto">
+            <div className="image-container-fade rounded-md relative w-full max-w-3xl lg:max-w-4xl xl:max-w-5xl aspect-video mx-auto">
               <Image
                 src="/images/irish.JPG"
                 alt="Authentic Irish warmth"
                 fill
-                className="object-cover"
+                className="object-cover rounded-md"
                 sizes="(max-width: 768px) 100vw, 50vw"
               />
             </div>
@@ -148,7 +148,7 @@ export default function Menu() {
 
           <div className="w-full md:w-5/12 flex flex-col items-start justify-start text-left md:pb-12">
             <div className="max-w-xs ">
-              <h3 className="reveal block text-lg font-medium tracking-widest text-black uppercase mb-4">
+              <h3 className="reveal block text-2xl font-medium tracking-widest text-black uppercase mb-4">
                 Irish Heritage
               </h3>
               <p className="paraReveal text-md md:text-xl font-light text-neutral-800 leading-snug">
@@ -162,19 +162,19 @@ export default function Menu() {
         {/* Row 3*/}
         <div className="flex panel flex-col md:flex-row h-full w-screen items-center gap-8 md:gap-16 pl-0 md:pl-12">
           <div className="w-full md:w-6/12">
-            <div className="image-container-fade relative w-full max-w-3xl lg:max-w-4xl xl:max-w-5xl aspect-video mx-auto">
+            <div className="image-container-fade rounded-md relative w-full max-w-3xl lg:max-w-4xl xl:max-w-5xl aspect-video mx-auto">
               <Image
-                src="/images/american.JPG"
+                src="/images/DSC00125.JPG"
                 alt="American comfort food"
                 fill
-                className="object-cover"
+                className="object-cover rounded-md"
                 sizes="(max-width: 768px) 100vw, 50vw"
               />
             </div>
           </div>
 
           <div className="md:w-5/12 mx-auto">
-            <h3 className="reveal block text-lg font-medium tracking-widest text-black uppercase mb-3">
+            <h3 className="reveal block text-2xl font-medium tracking-widest text-black uppercase mb-3">
               American Classic
             </h3>
             <p className="paraReveal text-md md:text-xl font-light text-neutral-800">

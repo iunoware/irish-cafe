@@ -10,8 +10,8 @@ export default function BrandEssence() {
   const imageRef = useRef<HTMLImageElement>(null);
   const bgRef = useRef<HTMLDivElement>(null);
   const headingRef = useRef<HTMLHeadingElement>(null);
-  const spanRef = useRef<HTMLSpanElement>(null);
-  const paraRef = useRef<HTMLParagraphElement>(null);
+  // const spanRef = useRef<HTMLSpanElement>(null);
+  // const paraRef = useRef<HTMLParagraphElement>(null);
   const imageContainerRef = useRef<HTMLDivElement>(null);
 
   useGSAP(
@@ -42,21 +42,35 @@ export default function BrandEssence() {
       });
 
       // para word by word animation
-      gsap.utils.toArray(paraRef.current).forEach((el) => {
-        const element = el as HTMLElement;
-        const split = new SplitText(element, { type: "words" });
-        gsap.from(split.words, {
+      // gsap.utils.toArray(paraRef.current).forEach((el) => {
+      //   const element = el as HTMLElement;
+      //   const split = new SplitText(element, { type: "words" });
+      //   gsap.from(split.words, {
+      //     y: 100,
+      //     opacity: 0,
+      //     stagger: 0.01,
+      //     scrollTrigger: {
+      //       trigger: element,
+      //       start: "top 80%",
+      //     },
+      //   });
+      // });
+
+      // fade in animation for text (new)
+      gsap.utils.toArray<HTMLElement>(".text-reveal").forEach((el, i) => {
+        gsap.from(el, {
           y: 100,
           opacity: 0,
-          stagger: 0.01,
+          duration: 1,
           scrollTrigger: {
-            trigger: element,
-            start: "top 80%",
+            trigger: el,
+            start: "top 85%",
           },
+          delay: i * 0.1,
         });
       });
 
-      const split = new SplitText([headingRef.current, spanRef.current], {
+      const split = new SplitText([headingRef.current], {
         type: "chars",
       });
 
@@ -111,8 +125,8 @@ export default function BrandEssence() {
           <div className="space-y-6">
             {/* Eyebrow */}
             <span
-              ref={spanRef}
-              className="block text-xs tracking-[0.25em] text-zinc-800 uppercase font-medium"
+              // ref={spanRef}
+              className="text-reveal block text-xs tracking-[0.25em] text-zinc-800 uppercase font-medium"
             >
               Brand Essence
             </span>
@@ -128,8 +142,8 @@ export default function BrandEssence() {
 
             {/* Paragraph */}
             <p
-              ref={paraRef}
-              className="max-w-xs text-sm md:text-base leading-relaxed text-zinc-900 font-light"
+              // ref={paraRef}
+              className="text-reveal max-w-xs text-sm md:text-base leading-relaxed text-zinc-900 font-light"
             >
               A precise convergence of Irish warmth, Italian culinary tradition, and
               American boldness. We curate an atmosphere where quality is felt, not just

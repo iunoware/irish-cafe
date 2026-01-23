@@ -32,6 +32,20 @@ export default function Hero() {
         },
       });
 
+      // fade in animation for text  (new)
+      gsap.utils.toArray<HTMLElement>(".text-reveal").forEach((el, i) => {
+        gsap.from(el, {
+          y: 20,
+          opacity: 0,
+          duration: 1,
+          scrollTrigger: {
+            trigger: el,
+            start: "top 100%",
+          },
+          delay: i * 0.1,
+        });
+      });
+
       const tl = gsap.timeline({
         scrollTrigger: {
           trigger: containerRef.current,
@@ -143,14 +157,14 @@ export default function Hero() {
       </div>
 
       {/* Minimal Editorial Text */}
-      <div
-        ref={headingRef}
-        className="absolute left-[15%] top-[65%] z-30 max-w-sm mix-blend-difference text-white"
-      >
-        <h1 className="text-5xl md:text-7xl font-light tracking-tighter leading-none opacity-100">
+      <div className="absolute left-[15%] top-[65%] z-30 max-w-sm mix-blend-difference text-white">
+        <h1
+          ref={headingRef}
+          className="text-5xl md:text-7xl font-light tracking-tighter leading-none opacity-100"
+        >
           The <br /> Irish Cafe
         </h1>
-        <p className="mt-4 text-xs md:text-sm tracking-[0.2em] uppercase opacity-70 border-l border-white/50 pl-4">
+        <p className="text-reveal mt-4 text-xs md:text-sm tracking-[0.2em] uppercase opacity-70 border-l border-white/50 pl-4">
           Madurai • Est. 2024
         </p>
       </div>

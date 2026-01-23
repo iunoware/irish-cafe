@@ -133,7 +133,7 @@ export default function Gallery() {
               key={idx}
               className={`group bento-item relative rounded-md overflow-hidden bg-neutral-100 ${img.className}`}
             >
-              <div className={`relative w-full h-full ${img.aspect}`}>
+              <div className={`relative w-full parallax-img ${img.aspect}`}>
                 <Image
                   src={img.src}
                   alt={img.alt}
