@@ -165,7 +165,7 @@ export default function Ambience() {
 
         {/* Bottom Decorative Detail */}
         <div className="mt-24 md:mt-18 flex justify-center md:justify-end">
-          <span className="font-sans text-[10px] md:text-xs uppercase tracking-[0.6em] text-zinc-300 font-light rotate-0 md:-rotate-90 origin-right">
+          <span className="font-sans text-[10px] md:text-xs uppercase tracking-[0.6em] text-zinc-600 font-light rotate-0 md:-rotate-90 origin-right">
             Atmosphere / Experience
           </span>
         </div>

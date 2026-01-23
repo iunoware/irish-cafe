@@ -96,18 +96,12 @@ export default function BrandEssence() {
 
   return (
     <section ref={containerRef} className="relative w-full overflow-clip pt-20">
-      {/* bg texture */}
-      {/* <div ref={bgRef} className="absolute inset-0 opacity-80 pointer-events-none z-0">
-        <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/xv.png')] " />
-      </div> */}
-
       <div className="flex flex-col-reverse md:flex-row-reverse w-full h-screen">
         {/* left image */}
         <div
           ref={imageContainerRef}
           className="relative w-full h-screen rounded-tl-sm rounded-bl-sm md:h-auto overflow-hidden"
         >
-          {/* <div className="absolute inset-0 "> */}
           <Image
             ref={imageRef}
             src="/images/irish-cafe-heritage.webp"
@@ -115,7 +109,6 @@ export default function BrandEssence() {
             fill
             className="object-cover rounded-tl-sm rounded-bl-sm"
           />
-          {/* </div> */}
         </div>
 
         {/* right text */}
@@ -145,9 +138,9 @@ export default function BrandEssence() {
               // ref={paraRef}
               className="text-reveal max-w-xs text-sm md:text-base leading-relaxed text-zinc-900 font-light"
             >
-              A precise convergence of Irish warmth, Italian culinary tradition, and
-              American boldness. We curate an atmosphere where quality is felt, not just
-              seen.
+              A precise convergence of Irish warmth, Italian culinary tradition,
+              and American boldness. We curate an atmosphere where quality is
+              felt, not just seen.
             </p>
           </div>
 

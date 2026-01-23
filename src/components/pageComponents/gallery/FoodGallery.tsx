@@ -53,14 +53,14 @@ const foodImages = [
   },
   // 7
   {
-    src: "/images/italian.JPG",
+    src: "/images/italian.jpg",
     alt: "Italian heritage",
     className: "md:col-span-4 md:row-span-1",
     aspect: "aspect-video md:aspect-auto md:h-full",
   },
   // 8
   {
-    src: "/images/american.JPG",
+    src: "/images/american.jpg",
     alt: "American bold flavors",
     className: "md:col-span-4 md:row-span-1",
     aspect: "aspect-video md:aspect-auto md:h-full",

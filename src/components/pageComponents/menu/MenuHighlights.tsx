@@ -30,13 +30,13 @@ const HIGHLIGHTS = [
     category: "Signature Plates",
     items: [
       {
-        src: "/images/mob-hero.png",
+        src: "/images/mob-hero.jpg",
         span: "col-span-1 row-span-2",
         alt: "Grilled premium steak",
         dish: "Pasta Alfredo ",
       },
       {
-        src: "/images/DSC00126.JPG",
+        src: "/images/DSC00126.jpg",
         span: "col-span-2 row-span-1",
         alt: "Traditional Irish Stew",
         dish: "Lamb Dish",
@@ -166,9 +166,15 @@ const MenuHighlights = () => {
 
                 // Aspect ratio logic for Next.js Image fill
                 let aspectClass = "aspect-square";
-                if (item.span.includes("col-span-2") && item.span.includes("row-span-1"))
+                if (
+                  item.span.includes("col-span-2") &&
+                  item.span.includes("row-span-1")
+                )
                   aspectClass = "aspect-[2/1]";
-                if (item.span.includes("col-span-1") && item.span.includes("row-span-2"))
+                if (
+                  item.span.includes("col-span-1") &&
+                  item.span.includes("row-span-2")
+                )
                   aspectClass = "aspect-[9/16]";
 
                 return (

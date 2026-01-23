@@ -147,7 +147,7 @@ export default function SignatureDishes() {
                   className="flex  items-center gap-4"
                 >
                   <span
-                    className={`${index == 1 ? "text-black md:bg-clip-text md:text-transparent md:bg-linear-to-r from-99%  from-white to-black" : "text-black"}   font-serif mix-blend-difference text-[10px] md:text-xl uppercase tracking-[0.4em] font-light`}
+                    className={`${index == 1 ? "text-black md:bg-clip-text md:text-transparent md:bg-linear-to-r from-99%  from-white to-black" : "text-black"}   font-serif mix-blend-difference text-md md:text-xl uppercase tracking-[0.4em] font-light`}
                   >
                     {dish.name}
                   </span>

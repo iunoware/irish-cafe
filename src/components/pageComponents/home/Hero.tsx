@@ -80,7 +80,7 @@ export default function Hero() {
           priority
         />
         <Image
-          src="/images/mob-hero.png"
+          src="/images/mob-hero.jpg"
           alt="Best Cafe in Madurai"
           fill
           className="object-cover object-center block md:hidden animate-subtle-zoom"
