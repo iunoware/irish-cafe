@@ -4,6 +4,8 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import localFont from "next/font/local";
 import "./globals.css";
+import CustomCursor from "@/components/CustomCursor";
+
 
 const inter = Inter({
   subsets: ["latin"],
@@ -52,6 +54,7 @@ export const metadata: Metadata = {
   },
 };
 
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -62,6 +65,7 @@ export default function RootLayout({
       <body
         className={`${inter.variable} ${libreBaskerville.variable} ${bonVivant.variable} antialiased`}
       >
+        <CustomCursor />
         <Navbar />
         {children}
         <Footer />

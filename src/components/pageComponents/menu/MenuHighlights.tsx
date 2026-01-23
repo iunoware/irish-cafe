@@ -33,7 +33,7 @@ const HIGHLIGHTS = [
         src: "/images/mob-hero.png",
         span: "col-span-1 row-span-2",
         alt: "Grilled premium steak",
-        dish: "white sauce pasta",
+        dish: "Pasta Alfredo ",
       },
       {
         src: "/images/DSC00126.JPG",

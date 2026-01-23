@@ -17,7 +17,7 @@ const dishes = [
     zIndex: "z-10",
   },
   {
-    name: "Truffle Tagliatelle",
+    name: "Pasta Alfredo",
     image: "/images/best-cuisines-in-madurai.webp",
     containerStyle: "w-[85%] md:w-[42%] ml-auto mr-0 md:-mt-[15%] relative",
     aspectRatio: "aspect-[4/5]",
@@ -137,14 +137,17 @@ export default function SignatureDishes() {
                     priority={index === 0}
                   />
                   {/* Subtle Grainy Overlay on Image */}
-                  <div className="absolute inset-0 bg-black/5 mix-blend-multiply opacity-20 pointer-events-none" />
+                  <div className="absolute inset-0 bg-black/20 mix-blend-multiply opacity-20 pointer-events-none" />
                 </div>
               </div>
 
               <div className="dish-text mt-8 flex items-center justify-between md:justify-start gap-6 opacity-0">
-                <div className="flex  items-center gap-4">
+                <div
+                  style={{ mixBlendMode: "difference" }}
+                  className="flex  items-center gap-4"
+                >
                   <span
-                    className={`${index == 1 ? "text-black md:bg-clip-text md:text-transparent md:bg-linear-to-r from-50%  from-white to-black" : "text-black"} font-serif mix-blend-difference text-[10px] md:text-xl uppercase tracking-[0.4em] font-light`}
+                    className={`${index == 1 ? "text-black md:bg-clip-text md:text-transparent md:bg-linear-to-r from-99%  from-white to-black" : "text-black"}   font-serif mix-blend-difference text-[10px] md:text-xl uppercase tracking-[0.4em] font-light`}
                   >
                     {dish.name}
                   </span>
