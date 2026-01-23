@@ -18,21 +18,21 @@ const peopleImages = [
 
   // 1
   {
-    src: "/images/hazel-nut-choco-pie.jpeg",
+    src: "/images/des-1.jpeg",
     alt: "Guest enjoying a moment",
     className: "md:col-span-4 md:row-span-1",
     aspect: "aspect-square md:aspect-auto md:h-full",
   },
   // 2
   {
-    src: "/images/dark-magic-choco-cake.jpeg",
+    src: "/images/chocolate-cake.jpeg",
     alt: "Quiet conversation",
     className: "md:col-span-4 md:row-span-1",
     aspect: "aspect-square md:aspect-auto md:h-full",
   },
   // 3
   {
-    src: "/images/cheese-cake.heic",
+    src: "/images/cheeseCake.heic",
     alt: "Barista detail",
     className: "md:col-span-4 md:row-span-2",
     aspect: "aspect-[3/4] md:aspect-auto md:h-full",

@@ -25,17 +25,31 @@ export default function Philosophy() {
       });
 
       // para reveal
-      gsap.utils.toArray(".paraReveal").forEach((el) => {
-        const element = el as HTMLElement;
-        const split = new SplitText(element, { type: "words" });
-        gsap.from(split.words, {
-          y: 100,
+      // gsap.utils.toArray(".paraReveal").forEach((el) => {
+      //   const element = el as HTMLElement;
+      //   const split = new SplitText(element, { type: "words" });
+      //   gsap.from(split.words, {
+      //     y: 100,
+      //     opacity: 0,
+      //     stagger: 0.01,
+      //     scrollTrigger: {
+      //       trigger: element,
+      //       start: "top 80%",
+      //     },
+      //   });
+      // });
+
+      // fade in animation for text  (new)
+      gsap.utils.toArray<HTMLElement>(".paraReveal").forEach((el, i) => {
+        gsap.from(el, {
+          y: 20,
           opacity: 0,
-          stagger: 0.01,
+          duration: 1,
           scrollTrigger: {
-            trigger: element,
-            start: "top 80%",
+            trigger: el,
+            start: "top 85%",
           },
+          delay: i * 0.1,
         });
       });
 

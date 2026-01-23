@@ -74,7 +74,7 @@ const foodImages = [
   },
   // 10
   {
-    src: "/images/DSC00162.jpg",
+    src: "/images/DSC00161.jpg",
     alt: "Coffee craft",
     className: "md:col-span-4 md:row-span-2",
     aspect: "aspect-[3/4] md:aspect-auto md:h-full",

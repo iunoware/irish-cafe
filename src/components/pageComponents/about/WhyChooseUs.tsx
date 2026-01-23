@@ -25,7 +25,7 @@ const contents: Contents[] = [
   },
   {
     id: 2,
-    image: "/images/best-cuisines-in-madurai.webp",
+    image: "/images/DSC00077.jpg",
     alt: "Artisan Coffee Craft",
     heading: "Craft over trends.",
     content:
@@ -43,22 +43,22 @@ const contents: Contents[] = [
 
 export default function WhyChooseUs() {
   const containerRef = useRef<HTMLElement>(null);
-  const spanRef = useRef<HTMLSpanElement>(null);
+  // const spanRef = useRef<HTMLSpanElement>(null);
   const imageRef = useRef<HTMLImageElement>(null);
 
   useGSAP(
     () => {
-      const tl = gsap.timeline({
-        scrollTrigger: {
-          trigger: containerRef.current,
-          start: "top 65%",
-        },
-      });
+      // const tl = gsap.timeline({
+      //   scrollTrigger: {
+      //     trigger: containerRef.current,
+      //     start: "top 65%",
+      //   },
+      // });
 
-      tl.from(spanRef.current, {
-        y: "100",
-        opacity: 0,
-      });
+      // tl.from(spanRef.current, {
+      //   y: "100",
+      //   opacity: 0,
+      // });
 
       // image container fade in
       gsap.utils.toArray(".image-container-fade").forEach((el) => {
@@ -90,20 +90,34 @@ export default function WhyChooseUs() {
         });
       });
 
-      // para
-      gsap.utils.toArray(".paraReveal").forEach((el) => {
-        const element = el as HTMLElement;
-        const split = new SplitText(element, { type: "words" });
-        gsap.from(split.words, {
-          y: 100,
+      // fade in animation for text  (new)
+      gsap.utils.toArray<HTMLElement>(".paraReveal").forEach((el, i) => {
+        gsap.from(el, {
+          y: 20,
           opacity: 0,
-          stagger: 0.01,
+          duration: 1,
           scrollTrigger: {
-            trigger: element,
-            start: "top 80%",
+            trigger: el,
+            start: "top 85%",
           },
+          delay: i * 0.1,
         });
       });
+
+      // para
+      // gsap.utils.toArray(".paraReveal").forEach((el) => {
+      //   const element = el as HTMLElement;
+      //   const split = new SplitText(element, { type: "words" });
+      //   gsap.from(split.words, {
+      //     y: 100,
+      //     opacity: 0,
+      //     stagger: 0.01,
+      //     scrollTrigger: {
+      //       trigger: element,
+      //       start: "top 80%",
+      //     },
+      //   });
+      // });
     },
     { scope: containerRef },
   );
@@ -121,8 +135,8 @@ export default function WhyChooseUs() {
       {/* heading */}
       <div className="max-w-4xl mx-auto mb-32 md:mb-48">
         <span
-          ref={spanRef}
-          className="block text-xs md:text-sm tracking-[0.3em] text-neutral-800 uppercase font-medium mb-6"
+          // ref={spanRef}
+          className="paraReveal block text-xs md:text-sm tracking-[0.3em] text-neutral-800 uppercase font-medium mb-6"
         >
           Not Just Another Café
         </span>
@@ -161,7 +175,7 @@ export default function WhyChooseUs() {
                 {content.heading}
               </h3>
               <div className="w-8 h-px bg-white/20 mb-4" />
-              <p className="paraReveal text-neutral-800 text-sm md:text-base font-light leading-relaxed">
+              <p className="paraReveal text-neutral-800 text-md md:text-lg font-light leading-relaxed">
                 {content.content}
               </p>
             </div>
