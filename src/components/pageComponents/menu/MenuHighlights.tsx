@@ -166,15 +166,9 @@ const MenuHighlights = () => {
 
                 // Aspect ratio logic for Next.js Image fill
                 let aspectClass = "aspect-square";
-                if (
-                  item.span.includes("col-span-2") &&
-                  item.span.includes("row-span-1")
-                )
+                if (item.span.includes("col-span-2") && item.span.includes("row-span-1"))
                   aspectClass = "aspect-[2/1]";
-                if (
-                  item.span.includes("col-span-1") &&
-                  item.span.includes("row-span-2")
-                )
+                if (item.span.includes("col-span-1") && item.span.includes("row-span-2"))
                   aspectClass = "aspect-[9/16]";
 
                 return (
