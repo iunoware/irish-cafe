@@ -12,14 +12,16 @@ const foodImages = [
   // 1
   {
     src: "/images/DSC00178.jpg",
-    alt: "Coffee craft",
+    alt: "Irish cafe white sauce pasta",
+    dishName: "white sauce pasta",
     className: "md:col-span-4 md:row-span-2",
     aspect: "aspect-[3/4] md:aspect-auto md:h-full",
   },
   // 2
   {
     src: "/images/DSC00126.JPG",
-    alt: "Plating detail",
+    alt: "Irish cafe Lamb Dish",
+    dishName: "Lamb Dish",
     className: "md:col-span-8 md:row-span-1",
     aspect: "aspect-video md:aspect-auto md:h-full",
   },
@@ -27,6 +29,7 @@ const foodImages = [
   {
     src: "/images/DSC01547.JPG",
     alt: "Fresh ingredients",
+    dishName: "dish-3",
     className: "md:col-span-4 md:row-span-1",
     aspect: "aspect-square md:aspect-auto md:h-full",
   },
@@ -34,13 +37,15 @@ const foodImages = [
   {
     src: "/images/DSC00130.jpg",
     alt: "Signature dish",
+    dishName: "dish-4",
     className: "md:col-span-4 md:row-span-2",
     aspect: "aspect-[3/4] md:aspect-auto md:h-full",
   },
   // 5
   {
     src: "/images/DSC01425.JPG",
-    alt: "Culinary process",
+    alt: "Irish cafe Shepherd's pie",
+    dishName: "SHEPHERD'S PIE",
     className: "md:col-span-5 md:row-span-1",
     aspect: "aspect-video md:aspect-auto md:h-full",
   },
@@ -48,6 +53,7 @@ const foodImages = [
   {
     src: "/images/DSC01476.JPG",
     alt: "Texture and taste",
+    dishName: "dish-6",
     className: "md:col-span-3 md:row-span-1",
     aspect: "aspect-square md:aspect-auto md:h-full",
   },
@@ -55,6 +61,7 @@ const foodImages = [
   {
     src: "/images/italian.jpg",
     alt: "Italian heritage",
+    dishName: "dish-7",
     className: "md:col-span-4 md:row-span-1",
     aspect: "aspect-video md:aspect-auto md:h-full",
   },
@@ -62,27 +69,31 @@ const foodImages = [
   {
     src: "/images/american.jpg",
     alt: "American bold flavors",
+    dishName: "dish-8",
     className: "md:col-span-4 md:row-span-1",
     aspect: "aspect-video md:aspect-auto md:h-full",
   },
   // 9
   {
     src: "/images/DSC00146.JPG",
-    alt: "American bold flavors",
+    alt: "Irish cafe Wood Fire Pizza",
+    dishName: "Wood Fire Pizza",
     className: "md:col-span-4 md:row-span-1",
     aspect: "aspect-video md:aspect-auto md:h-full",
   },
   // 10
   {
     src: "/images/DSC00161.jpg",
-    alt: "Coffee craft",
+    alt: "Irish cafe Cocktail Prawns",
+    dishName: "Cocktail Prawns",
     className: "md:col-span-4 md:row-span-2",
     aspect: "aspect-[3/4] md:aspect-auto md:h-full",
   },
   // 11
   {
     src: "/images/DSC00125.JPG",
-    alt: "Plating detail",
+    alt: "Irish Cafe Roasted Chicken Burger",
+    dishName: "Roasted Chicken Burger",
     className: "md:col-span-8 md:row-span-1",
     aspect: "aspect-video md:aspect-auto md:h-full",
   },
@@ -90,41 +101,47 @@ const foodImages = [
   {
     src: "/images/DSC00153.JPG",
     alt: "American bold flavors",
+    dishName: "dish-12",
     className: "md:col-span-4 md:row-span-1",
     aspect: "aspect-video md:aspect-auto md:h-full",
   },
   // 13
   {
     src: "/images/DSC00110.JPG",
-    alt: "American bold flavors",
+    alt: "Irish cafe french fries",
+    dishName: "french fries",
     className: "md:col-span-4 md:row-span-1",
     aspect: "aspect-video md:aspect-auto md:h-full",
   },
   // 14
   {
     src: "/images/DSC00077.JPG",
-    alt: "Plating detail",
+    alt: "Irish cafe grilled chicken steak",
+    dishName: "grilled chicken steak",
     className: "md:col-span-8 md:row-span-1",
     aspect: "aspect-video md:aspect-auto md:h-full",
   },
   // 15
   {
     src: "/images/DSC00070.JPG",
-    alt: "American bold flavors",
+    alt: "Irish cafe club sandwich",
+    dishName: "Club Sandwich",
     className: "md:col-span-4 md:row-span-1",
     aspect: "aspect-video md:aspect-auto md:h-full",
   },
   // 16
   {
     src: "/images/tuscan-cheesy-chicken.jpeg",
-    alt: "American bold flavors",
+    alt: "Irish cafe Tuscan cheesy chicken",
+    dishName: "Tuscan cheesy chicken",
     className: "md:col-span-4 md:row-span-1",
     aspect: "aspect-video md:aspect-auto md:h-full",
   },
   // 17
   {
     src: "/images/oven-roasted-potatoes.jpeg",
-    alt: "Plating detail",
+    alt: "Irish cafe loaded potatoes",
+    dishName: "loaded Potatoes",
     className: "md:col-span-8 md:row-span-1",
     aspect: "aspect-video md:aspect-auto md:h-full",
   },
@@ -197,6 +214,9 @@ export default function FoodGallery() {
                   className="object-cover rounded-md transition-all duration-1000 group-hover:scale-105"
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
+              </div>
+              <div className="absolute inset-0 flex justify-start items-end p-4 uppercase tracking-widest bg-linear-to-t from-black/30 to-transparent transition-all duration-300 opacity-0 group-hover:opacity-100">
+                <h3>{img.dishName}</h3>
               </div>
             </div>
           ))}
