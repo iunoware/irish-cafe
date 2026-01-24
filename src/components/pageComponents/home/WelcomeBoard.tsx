@@ -32,11 +32,7 @@ const HandDrawnPatterns = () => (
       fill="none"
       stroke="currentColor"
     >
-      <path
-        d="M10,90 Q50,80 60,40 Q70,70 90,60"
-        strokeWidth="1"
-        strokeLinecap="round"
-      />
+      <path d="M10,90 Q50,80 60,40 Q70,70 90,60" strokeWidth="1" strokeLinecap="round" />
       <circle cx="60" cy="40" r="3" fill="currentColor" opacity="0.5" />
       <path
         d="M55,35 Q60,20 65,35 Q80,40 65,45 Q60,60 55,45 Q40,40 55,35"
@@ -150,9 +146,9 @@ export default function WelcomeBoard() {
               <div className="mb-20 text-center max-w-sm">
                 <p className="font-sans text-xs md:text-sm uppercase tracking-[0.4em] text-zinc-300 leading-relaxed font-light">
                   A sanctuary for those <br />
-                  who appreciate{" "}
+                  seeking the{" "}
                   <span className="text-zinc-100 font-medium">
-                    unhurried
+                    best cafe in Madurai near me
                   </span>{" "}
                   <br />
                   flavours & comfort.

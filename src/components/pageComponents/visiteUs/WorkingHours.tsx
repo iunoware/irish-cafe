@@ -62,7 +62,7 @@ const WorkingHours = () => {
 
         <div className="pt-8">
           <p className="text-lg md:text-xl font-serif italic text-neutral-400">
-            Open All Days
+            Open all days among top Cafés in Madurai.
           </p>
         </div>
       </div>

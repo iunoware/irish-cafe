@@ -154,9 +154,9 @@ const Hero = () => {
               ref={subtextRef}
               className="max-w-2xl font-inter text-sm leading-relaxed text-zinc-300 md:text-xl md:leading-loose"
             >
-              A collection of moments, spaces, and details — captured as they
-              are. Unstaged, unhurried, and shaped by intention rather than
-              spectacle.
+              A collection of moments, spaces, and details at the best cafe in
+              Madurai — captured as they are. Unstaged, unhurried, and shaped by
+              intention rather than spectacle.
             </p>
           </div>
         </div>

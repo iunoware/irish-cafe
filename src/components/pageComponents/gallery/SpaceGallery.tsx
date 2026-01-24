@@ -12,28 +12,28 @@ const images = [
   // 1
   {
     src: "/images/best-cafe-in-madurai.webp",
-    alt: "Wide cafe interior",
+    alt: "Wide interior of our aesthetic cafe in Madurai",
     className: "md:col-span-8 md:row-span-2",
     aspect: "aspect-[16/10] md:aspect-auto md:h-full",
   },
   // 2
   {
     src: "/images/irish-cafe-heritage.webp",
-    alt: "Detail of seating area",
+    alt: "Detail of seating area in the best ambience cafe in Madurai",
     className: "md:col-span-4 md:row-span-1",
     aspect: "aspect-square md:aspect-auto md:h-full",
   },
   // 3
   {
     src: "/images/DSC00050.JPG",
-    alt: "Atmospheric corner",
+    alt: "Atmospheric corner at the best cafe in Madurai",
     className: "md:col-span-4 md:row-span-1",
     aspect: "aspect-square md:aspect-auto md:h-full",
   },
   // 4
   {
     src: "/images/DSC01369.jpg",
-    alt: "Minimal tabletop scene",
+    alt: "Minimal tabletop scene in an aesthetic cafe in Madurai",
     className: "md:col-span-4 md:row-span-2",
     aspect: "aspect-[3/4] md:aspect-auto md:h-full",
   },
@@ -121,8 +121,8 @@ export default function Gallery() {
           </h2>
           <div className="text-reveal w-12 h-1px bg-neutral-300 mb-6"></div>
           <p className="text-reveal text-sm md:text-base font-sans tracking-wide text-neutral-500 font-light leading-relaxed uppercase">
-            Quietly occupied. <br />
-            Slowly considered.
+            Experience the best ambience cafe <br />
+            in Madurai. Slowly considered.
           </p>
         </div>
 

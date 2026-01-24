@@ -64,8 +64,9 @@ export default function AboutTeaser() {
             <div className="space-y-8">
               <p className="font-sans text-zinc-500 text-sm md:text-lg leading-relaxed tracking-wide">
                 What began as a passion for global culinary traditions has
-                evolved into Madurai’s most celebrated dining destination. We
-                bring the heart of Irish hospitality to the local table.
+                evolved into one of the top Cafés in Madurai. While offering the
+                modern comfort of cafes like Starbucks in Madurai, we bring
+                authentic Irish hospitality home.
               </p>
 
               <Link
@@ -83,7 +84,7 @@ export default function AboutTeaser() {
             <div className="aspect-16/10 rounded-sm md:aspect-4/3 lg:aspect-video relative overflow-hidden shadow-[30px_30px_70px_rgba(0,0,0,0.05)] border border-zinc-50">
               <Image
                 src="/images/the-irish-cafe-about.webp"
-                alt="The Irish Cafe Story"
+                alt="The Irish Cafe Story — leading the Cafés in Madurai"
                 fill
                 className="object-cover transition-transform duration-3000 hover:scale-105 brightness-[0.98]"
                 sizes="(max-width: 768px) 100vw, 60vw"

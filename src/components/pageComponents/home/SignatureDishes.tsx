@@ -11,7 +11,8 @@ gsap.registerPlugin(ScrollTrigger);
 const dishes = [
   {
     name: "Classic Irish Stew",
-    image: "/images/DSC00130.JPG",
+    image: "/images/DSC00130.webp",
+    alt: "Coffee Shop at Heritage Madurai Hotel",
     containerStyle: "w-full md:w-[60%] ml-0 mr-auto",
     aspectRatio: "aspect-[4/5] md:aspect-[16/10]",
     zIndex: "z-10",
@@ -19,6 +20,7 @@ const dishes = [
   {
     name: "Pasta Alfredo",
     image: "/images/best-cuisines-in-madurai.webp",
+    alt: "Best cafe in Madurai for couples",
     containerStyle: "w-[85%] md:w-[42%] ml-auto mr-0 md:-mt-[15%] relative",
     aspectRatio: "aspect-[4/5]",
     zIndex: "z-20",
@@ -26,6 +28,7 @@ const dishes = [
   {
     name: "Dry-Aged Wagyu",
     image: "/images/DSC00126.JPG",
+    alt: "Aesthetic cafe in Madurai",
     containerStyle: "w-full  md:w-[55%] mx-auto md:-mt-[10%]",
     aspectRatio: "aspect-[16/9]",
     zIndex: "z-10",
@@ -33,6 +36,7 @@ const dishes = [
   {
     name: "Brownie with Ice cream",
     image: "/images/DSC01471.JPG",
+    alt: "Best cafe in Madurai near me",
     containerStyle:
       "w-[75%] md:w-[32%] ml-[10%] object-right mr-auto md:ml-auto md:mr-[8%] md:-mt-[18%]",
     aspectRatio: "aspect-square",
@@ -47,7 +51,7 @@ export default function SignatureDishes() {
     () => {
       const items = gsap.utils.toArray(".dish-item");
 
-      items.forEach((item, index) => {
+      items.forEach((item) => {
         const img = (item as HTMLElement).querySelector(".dish-image-wrapper");
         const text = (item as HTMLElement).querySelector(".dish-text");
 
@@ -130,7 +134,7 @@ export default function SignatureDishes() {
                 >
                   <Image
                     src={dish.image}
-                    alt={dish.name}
+                    alt={dish.alt}
                     fill
                     className="object-cover scale-105 transition-transform duration-1000 group-hover:scale-100 brightness-[0.98]"
                     sizes="(max-width: 768px) 100vw, 60vw"

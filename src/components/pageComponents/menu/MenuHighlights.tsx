@@ -15,7 +15,7 @@ const HIGHLIGHTS = [
       {
         src: "/images/c-2.png",
         span: "col-span-2 row-span-2",
-        alt: "Specialty coffee brewing",
+        alt: "Specialty coffee brewing at our Cafes in Madurai",
         dish: "Irish Coffee",
       },
       {
@@ -32,13 +32,13 @@ const HIGHLIGHTS = [
       {
         src: "/images/mob-hero.jpg",
         span: "col-span-1 row-span-2",
-        alt: "Grilled premium steak",
+        alt: "Grilled premium steak in our Cafe in Madurai bypass",
         dish: "Pasta Alfredo ",
       },
       {
         src: "/images/DSC00126.jpg",
         span: "col-span-2 row-span-1",
-        alt: "Traditional Irish Stew",
+        alt: "Traditional Irish Stew at the best cafe in Madurai",
         dish: "Lamb Dish",
       },
       {
@@ -48,7 +48,7 @@ const HIGHLIGHTS = [
         dish: "Loaded Potatoes",
       },
       {
-        src: "/images/DSC00130.JPG",
+        src: "/images/DSC00130.webp",
         span: "col-span-1 row-span-1",
         alt: "Signature Dish",
         dish: "Signature Dish",
@@ -61,7 +61,7 @@ const HIGHLIGHTS = [
       {
         src: "/images/des-1.jpeg",
         span: "col-span-2 row-span-2",
-        alt: "Handcrafted dessert",
+        alt: "Handcrafted dessert at our aesthetic cafe in Madurai",
         dish: "Hazelnut Chocolate Pie",
       },
       {
@@ -146,7 +146,7 @@ const MenuHighlights = () => {
         <div className="absolute inset-0 bg-[url('/images/clean-gray-paper.png')]" />
       </div>
       <div className="container mx-auto px-6 md:px-12 lg:px-24">
-        {HIGHLIGHTS.map((group, groupIdx) => (
+        {HIGHLIGHTS.map((group) => (
           <div key={group.category} className="category-group mb-32 last:mb-0">
             {/* Category Label */}
             <div className="mb-16 flex items-center gap-6">
@@ -166,15 +166,9 @@ const MenuHighlights = () => {
 
                 // Aspect ratio logic for Next.js Image fill
                 let aspectClass = "aspect-square";
-                if (
-                  item.span.includes("col-span-2") &&
-                  item.span.includes("row-span-1")
-                )
+                if (item.span.includes("col-span-2") && item.span.includes("row-span-1"))
                   aspectClass = "aspect-[2/1]";
-                if (
-                  item.span.includes("col-span-1") &&
-                  item.span.includes("row-span-2")
-                )
+                if (item.span.includes("col-span-1") && item.span.includes("row-span-2"))
                   aspectClass = "aspect-[9/16]";
 
                 return (

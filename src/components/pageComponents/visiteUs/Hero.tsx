@@ -90,9 +90,9 @@ const Hero = () => {
               ref={subtextRef}
               className="max-w-2xl font-inter text-lg leading-relaxed text-zinc-400 md:text-xl md:leading-loose"
             >
-              Leave the rush behind. Step into our world of slow-brewed
-              tradition, freshly baked aromas, and the simple joy of shared
-              presence.
+              Leave the rush behind. Step into the best cafe in Madurai near me,
+              where the elegance of a coffee shop at Heritage Madurai Hotel
+              meets our slow-brewed tradition.
             </p>
           </div>
         </div>
