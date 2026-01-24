@@ -74,11 +74,9 @@ const MenuCTA = () => {
           <div className="mb-12 h-px w-8 bg-zinc-200" />
 
           <p className="mb-16 font-inter text-sm leading-relaxed text-zinc-300 italic md:text-base">
-            Our complete collection of seasonal{" "}
+            Our collection of seasonal food from the best ambience cafe{" "}
             <br className="hidden md:block" />
-            food and artisan beverages is available{" "}
-            <br className="hidden md:block" />
-            to view in our house menu.
+            in Madurai is available to view in our house menu.
           </p>
 
           <a

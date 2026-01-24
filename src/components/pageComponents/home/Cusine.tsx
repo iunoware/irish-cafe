@@ -22,18 +22,21 @@ export default function Cusine() {
       name: "Irish",
       tagline: "AUTHENTIC COMFORT",
       image: "/images/irish.jpg",
+      alt: "BEST Cafés in Madurai",
       layout: "large-left",
     },
     {
       name: "Italian",
       tagline: "REFINED CLASSICS",
       image: "/images/italian.jpg",
+      alt: "Cafés in Madurai",
       layout: "offset-right",
     },
     {
       name: "American",
       tagline: "BOLD MODERN SPIRIT",
       image: "/images/DSC00125.jpg",
+      alt: "cafes like Starbucks in Madurai",
       layout: "centered-overlap",
     },
   ];
@@ -108,7 +111,7 @@ export default function Cusine() {
             >
               <Image
                 src={cuisines[0].image}
-                alt="Irish Cuisine"
+                alt={cuisines[0].alt}
                 fill
                 className="object-cover scale-105 hover:scale-100 transition-transform duration-1000"
               />
@@ -137,7 +140,7 @@ export default function Cusine() {
             >
               <Image
                 src={cuisines[1].image}
-                alt="Italian Cuisine"
+                alt={cuisines[1].alt}
                 fill
                 className="object-cover brightness-[0.9] scale-105 hover:scale-100 transition-transform duration-1000"
               />
@@ -199,7 +202,7 @@ export default function Cusine() {
             >
               <Image
                 src={cuisines[2].image}
-                alt="Irish Cuisine"
+                alt={cuisines[2].alt}
                 fill
                 className="object-cover brightness-[0.9] scale-105 hover:scale-100 transition-transform duration-1000"
               />

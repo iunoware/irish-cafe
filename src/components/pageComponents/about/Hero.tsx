@@ -116,7 +116,7 @@ export default function Hero() {
       >
         <Image
           src="/images/about-hero-back.png"
-          alt="Atmospheric Café Architecture"
+          alt="Atmospheric Aesthetic Cafe in Madurai Architecture"
           fill
           className="object-cover "
           priority
@@ -132,7 +132,7 @@ export default function Hero() {
         <div className="relative h-full w-full overflow-hidden">
           <Image
             src="/images/best-cafe-in-madurai.webp"
-            alt="Interior Settings"
+            alt="Best Cafe in Madurai Interior Settings"
             fill
             className="object-cover rounded-sm scale-105 hover:scale-100 transition-transition duration-500"
             priority
@@ -148,7 +148,7 @@ export default function Hero() {
         <div className="relative h-full w-full overflow-hidden ">
           <Image
             src="/images/the-irish-cafe-about-2.webp"
-            alt="Artistic Detail"
+            alt="Artistic Detail at our Aesthetic Cafe in Madurai"
             fill
             className="object-cover rounded-sm scale-105 hover:scale-100 transition-transition duration-500"
             priority
@@ -164,8 +164,8 @@ export default function Hero() {
         >
           The <br /> Irish Cafe
         </h1>
-        <p className="text-reveal mt-4 text-xs md:text-sm tracking-[0.2em] uppercase opacity-70 border-l border-white/50 pl-4">
-          Madurai • Est. 2024
+        <p className="text-reveal mt-4 text-[10px] md:text-xs tracking-[0.2em] uppercase opacity-70 border-l border-white/50 pl-4">
+          Madurai • Best Cafe in Madurai
         </p>
       </div>
     </section>

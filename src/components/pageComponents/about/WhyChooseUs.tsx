@@ -18,26 +18,26 @@ const contents: Contents[] = [
   {
     id: 1,
     image: "/images/the-irish-cafe-multi-cuisine.webp",
-    alt: "Quiet Luxury Atmosphere",
+    alt: "Best Ambience Cafes in Madurai",
     heading: "A café shaped by intention, not impulse.",
     content:
-      "We believe a café should feel calm, not crowded. Our space is designed to encourage conversation, comfort, and unhurried moments — not rush or distraction. Every element works together to create an environment where people feel present, not pressured.",
+      "We believe cafes in Madurai should feel calm, not crowded. Our multi-cuisine cafe in Madurai is designed to encourage conversation, comfort, and unhurried moments — not rush or distraction. Every element works together here.",
   },
   {
     id: 2,
     image: "/images/DSC00077.jpg",
-    alt: "Artisan Coffee Craft",
+    alt: "Artisan Coffee among Best Restaurants in Madurai",
     heading: "Craft over trends.",
     content:
-      "We focus on quality that lasts, not ideas that fade. From ingredients to preparation, every detail is chosen with care, patience, and respect for the process. What we serve is intentional - not driven by trends, but by consistency and craftsmanship.",
+      "We focus on quality that lasts, not ideas that fade. As one of the best restaurants in Madurai, every detail is chosen with care and respect for the craft. What we serve is intentional - driven by consistency and craftsmanship.",
   },
   {
     id: 3,
     image: "/images/best-cafe-in-madurai.webp",
-    alt: "Quiet Luxury Atmosphere",
+    alt: "Quiet Luxury Aesthetic Cafe in Madurai",
     heading: "Culture over convenience.",
     content:
-      "The Irish Cafe brings together influences from different cultures, thoughtfully interpreted through design, taste, and experience. It’s a place shaped by ideas, not shortcuts - where global sensibilities meet local warmth.",
+      "The Irish Cafe brings together global influences, thoughtfully interpreted through taste and experience. It’s an aesthetic cafe in Madurai shaped by ideas, not shortcuts - where global sensibilities meet local warmth.",
   },
 ];
 

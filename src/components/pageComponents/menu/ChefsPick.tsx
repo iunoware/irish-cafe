@@ -13,17 +13,19 @@ const CHEFS_PICKS = [
     name: "Wood Fire Pizza",
     description: "Nothing Beats the Crisp, Charred Crust of a wood.",
     src: "/images/DSC00139.JPG",
+    alt: "Best cafe in Madurai",
   },
   {
     name: "Cocktail Prawns ",
     description: "Dive into luxury with our Cocktail Prawns.",
     src: "/images/DSC00161.JPG",
+    alt: "Aesthetic cafe in Madurai",
   },
   {
     name: "Tuscan Cheesy Chicken",
-    description:
-      "Peri-peri Crumbed Chicken Smothered in a molten Cheesy Sauce.",
+    description: "Peri-peri Crumbed Chicken Smothered in a molten Cheesy Sauce.",
     src: "/images/somethinggood.jpeg",
+    alt: "Best ambience cafe in Madurai",
   },
 ];
 
@@ -81,9 +83,9 @@ const ChefsPick = () => {
               Chef’s <br /> <span className="italic">Pick.</span>
             </h2>
             <p className="font-inter text-lg leading-relaxed text-zinc-600">
-              Each season, our head chef selects a handful of dishes that best
-              embody our philosophy of heritage and craft. These are the
-              must-experience highlights of our current kitchen.
+              Each season, our head chef selects dishes that best embody our multi-cuisine
+              cafe in Madurai philosophy. These highlights represent why we are among the
+              best restaurants in Madurai.
             </p>
             <div className="mt-12 h-px w-24 bg-zinc-900" />
           </div>
@@ -93,12 +95,12 @@ const ChefsPick = () => {
             ref={cardsRef}
             className="lg:w-2/3 flex flex-col md:flex-row gap-8 lg:gap-12"
           >
-            {CHEFS_PICKS.map((dish, idx) => (
+            {CHEFS_PICKS.map((dish) => (
               <div key={dish.name} className="chef-card group relative flex-1">
                 <div className="relative aspect-3/4 overflow-hidden rounded-sm bg-zinc-200">
                   <Image
                     src={dish.src}
-                    alt={dish.name}
+                    alt={dish.alt}
                     fill
                     className="object-cover transition-transform duration-1000 group-hover:scale-110"
                     sizes="(max-width: 768px) 100vw, 33vw"

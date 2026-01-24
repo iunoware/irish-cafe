@@ -19,7 +19,7 @@ const peopleImages = [
   // 1
   {
     src: "/images/des-1.jpeg",
-    alt: "Guest enjoying a moment",
+    alt: "Guest enjoying a moment at our aesthetic cafe in Madurai",
     className: "md:col-span-4 md:row-span-1",
     aspect: "aspect-square md:aspect-auto md:h-full",
     dishName: "Hazelnut Chocolate Pie",
@@ -27,7 +27,7 @@ const peopleImages = [
   // 2
   {
     src: "/images/chocolate-cake.jpeg",
-    alt: "Quiet conversation",
+    alt: "Quiet conversation among Cafés in Madurai",
     className: "md:col-span-4 md:row-span-1",
     aspect: "aspect-square md:aspect-auto md:h-full",
     dishName: "Magic Chocolate Cake",
@@ -43,7 +43,7 @@ const peopleImages = [
   // 4
   {
     src: "/images/thought-before-trend.webp",
-    alt: "Shared laughter",
+    alt: "Shared laughter at an aesthetic cafe in Madurai",
     className: "md:col-span-4 md:row-span-2",
     aspect: "aspect-[3/4] md:aspect-auto md:h-full",
     dishName: "Watermelon Mojito",
@@ -122,7 +122,7 @@ export default function DessertGallery() {
           </h2>
           <div className="text-reveal w-12 h-px bg-neutral-300 mb-6"></div>
           <p className="text-reveal text-sm md:text-base font-sans tracking-wide text-neutral-500 font-light leading-relaxed uppercase">
-            Built to linger. <br />
+            Top among Cafés in Madurai. <br />
             Sweetness without excess.
           </p>
         </div>
@@ -143,7 +143,7 @@ export default function DessertGallery() {
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
               </div>
-              <div className="absolute inset-0 text-white flex justify-start items-end p-4 uppercase tracking-widest bg-linear-to-t from-black/30 to-transparent transition-all duration-300 opacity-0 group-hover:opacity-100">
+              <div className="absolute inset-0 text-white flex justify-start items-end p-4 uppercase tracking-widest bg-linear-to-t from-black/30 to-transparent transition-all duration-300 opacity-100 sm:opacity-0 group-hover:opacity-100">
                 <h3>{img.dishName}</h3>
               </div>
             </div>

@@ -102,10 +102,10 @@ export default function Menu() {
               A Thoughtful <br /> Menu
             </h2>
             <p className="paraReveal text-neutral-800 text-base md:text-lg font-light leading-relaxed max-w-md">
-              This is not about variety. It is about coherence. Whether it is an
-              Irish staple or an Italian classic, the approach remains the same:
-              respect the origin, refine the preparation, and trust the
-              ingredient.
+              This is not about variety; it’s about coherence at our
+              multi-cuisine cafe in Madurai. Conveniently located for those
+              seeking a cafe in Madurai bypass, we refine every preparation and
+              trust the ingredient.
             </p>
           </div>
         </div>
@@ -116,7 +116,7 @@ export default function Menu() {
             <div className="image-container-fade rounded-md relative w-full max-w-3xl lg:max-w-4xl xl:max-w-5xl aspect-video mx-auto">
               <Image
                 src="/images/italian.jpg"
-                alt="Italian cuisine details"
+                alt="Italian cuisine details at our multi-cuisine cafe in Madurai"
                 fill
                 className="object-cover rounded-md"
                 sizes="(max-width: 768px) 100vw, 50vw"
@@ -143,7 +143,7 @@ export default function Menu() {
             <div className="image-container-fade rounded-md relative w-full max-w-3xl lg:max-w-4xl xl:max-w-5xl aspect-video mx-auto">
               <Image
                 src="/images/irish.jpg"
-                alt="Authentic Irish warmth"
+                alt="Authentic Irish warmth and best ambience cafe in Madurai"
                 fill
                 className="object-cover rounded-md"
                 sizes="(max-width: 768px) 100vw, 50vw"
@@ -170,7 +170,7 @@ export default function Menu() {
             <div className="image-container-fade rounded-md relative w-full max-w-3xl lg:max-w-4xl xl:max-w-5xl aspect-video mx-auto">
               <Image
                 src="/images/DSC00125.jpg"
-                alt="American comfort food"
+                alt="American classics at our cafe in Madurai bypass"
                 fill
                 className="object-cover rounded-md"
                 sizes="(max-width: 768px) 100vw, 50vw"

@@ -70,8 +70,8 @@ const Hero = () => {
               ref={subtextRef}
               className="max-w-2xl font-inter text-lg leading-relaxed text-zinc-200 md:text-xl md:leading-loose"
             >
-              A selection of our kitchen’s traditionally prepared seasonal
-              dishes, handcrafted with integrity and local craft.
+              A selection of seasonal dishes from the best cafe in Madurai,
+              handcrafted with integrity and local craft.
             </p>
           </div>
         </div>
