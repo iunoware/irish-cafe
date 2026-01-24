@@ -28,14 +28,14 @@ export default function Cusine() {
     {
       name: "Italian",
       tagline: "REFINED CLASSICS",
-      image: "/images/italian.jpg",
+      image: "/images/italian.webp",
       alt: "Cafés in Madurai",
       layout: "offset-right",
     },
     {
       name: "American",
       tagline: "BOLD MODERN SPIRIT",
-      image: "/images/DSC00125.jpg",
+      image: "/images/DSC00125.webp",
       alt: "cafes like Starbucks in Madurai",
       layout: "centered-overlap",
     },

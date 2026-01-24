@@ -25,7 +25,7 @@ const contents: Contents[] = [
   },
   {
     id: 2,
-    image: "/images/DSC00077.jpg",
+    image: "/images/DSC00077.webp",
     alt: "Artisan Coffee among Best Restaurants in Madurai",
     heading: "Craft over trends.",
     content:

@@ -12,13 +12,13 @@ const CHEFS_PICKS = [
   {
     name: "Wood Fire Pizza",
     description: "Nothing Beats the Crisp, Charred Crust of a wood.",
-    src: "/images/DSC00139.JPG",
+    src: "/images/DSC00139.webp",
     alt: "Best cafe in Madurai",
   },
   {
     name: "Cocktail Prawns ",
     description: "Dive into luxury with our Cocktail Prawns.",
-    src: "/images/DSC00161.JPG",
+    src: "/images/DSC00161.webp",
     alt: "Aesthetic cafe in Madurai",
   },
   {

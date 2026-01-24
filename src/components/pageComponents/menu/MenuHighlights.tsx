@@ -48,7 +48,7 @@ const HIGHLIGHTS = [
         dish: "Loaded Potatoes",
       },
       {
-        src: "/images/DSC00130.JPG",
+        src: "/images/DSC00130.webp",
         span: "col-span-1 row-span-1",
         alt: "Signature Dish",
         dish: "Signature Dish",

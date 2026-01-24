@@ -11,7 +11,7 @@ gsap.registerPlugin(ScrollTrigger);
 const dishes = [
   {
     name: "Classic Irish Stew",
-    image: "/images/DSC00130.JPG",
+    image: "/images/DSC00130.webp",
     alt: "Coffee Shop at Heritage Madurai Hotel",
     containerStyle: "w-full md:w-[60%] ml-0 mr-auto",
     aspectRatio: "aspect-[4/5] md:aspect-[16/10]",
