@@ -94,17 +94,17 @@ export default function Gallery() {
       //   });
       // });
 
-      gsap.utils.toArray<HTMLElement>(".bento-item").forEach((img) => {
-        gsap.from(img, {
-          opacity: 0,
-          stagger: 0.2,
-          duration: 1,
-          scrollTrigger: {
-            trigger: img,
-            start: "top 80%",
-          },
-        });
-      });
+      // gsap.utils.toArray<HTMLElement>(".bento-item").forEach((img) => {
+      //   gsap.from(img, {
+      //     opacity: 0,
+      //     stagger: 0.2,
+      //     duration: 1,
+      //     scrollTrigger: {
+      //       trigger: img,
+      //       start: "top 80%",
+      //     },
+      //   });
+      // });
 
       // fade in animation for text
       gsap.utils.toArray<HTMLElement>(".text-reveal").forEach((el, i) => {
