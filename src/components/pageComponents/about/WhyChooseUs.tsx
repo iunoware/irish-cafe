@@ -167,6 +167,7 @@ export default function WhyChooseUs() {
                 src={content.image}
                 alt={content.alt}
                 fill
+                loading="lazy"
                 className="object-cover h-[120%] opacity-90 rounded-sm "
               />
             </div>

@@ -152,20 +152,35 @@ export default function FoodGallery() {
 
   useGSAP(
     () => {
+      // 1
       // animation for images
-      gsap.utils.toArray<HTMLElement>(".bento-item").forEach((img, i) => {
-        gsap.from(img, {
-          opacity: 0,
-          y: 30,
-          duration: 1,
-          ease: "power2.out",
-          scrollTrigger: {
-            trigger: img,
-            start: "top 90%",
-          },
-          delay: i * 0.05,
-        });
-      });
+      // gsap.utils.toArray<HTMLElement>(".bento-item").forEach((img, i) => {
+      //   gsap.from(img, {
+      //     opacity: 0,
+      //     // y: 30,
+      //     duration: 1,
+      //     ease: "power2.out",
+      //     scrollTrigger: {
+      //       trigger: img,
+      //       start: "top 90%",
+      //     },
+      //     delay: i * 0.05,
+      //   });
+      // });
+
+      // 2
+      // gsap.utils.toArray<HTMLElement>(".bento-item").forEach((img) => {
+      //   gsap.from(img, {
+      //     opacity: 0,
+      //     stagger: 0.08,
+      //     duration: 1,
+      //     scrollTrigger: {
+      //       trigger: containerRef.current,
+      //       start: "top 90%",
+      //       once: true,
+      //     },
+      //   });
+      // });
 
       // fade in animation for text
       gsap.utils.toArray<HTMLElement>(".text-reveal").forEach((el, i) => {
@@ -211,7 +226,8 @@ export default function FoodGallery() {
                   src={img.src}
                   alt={img.alt}
                   fill
-                  className="object-cover rounded-md transition-all duration-1000 group-hover:scale-105"
+                  // loading="lazy"
+                  className="object-cover rounded-md"
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
               </div>

@@ -104,6 +104,7 @@ export default function BrandEssence() {
         >
           <Image
             ref={imageRef}
+            loading="lazy"
             src="/images/irish-cafe-heritage.webp"
             alt="Luxury Multi-cuisine Cafe in Madurai Interior"
             fill
@@ -136,11 +137,11 @@ export default function BrandEssence() {
             {/* Paragraph */}
             <p
               // ref={paraRef}
-              className="text-reveal max-w-xs text-sm md:text-base leading-relaxed text-zinc-900 font-light"
+              className="text-reveal max-w-xs text-md md:text-lg leading-relaxed text-zinc-900 font-light"
             >
-              A precise convergence of Irish warmth, Italian culinary tradition,
-              and American boldness. Our multi-cuisine cafe in Madurai curates
-              an atmosphere where quality is felt, not just seen.
+              A precise convergence of Irish warmth, Italian culinary tradition, and
+              American boldness. Our multi-cuisine cafe in Madurai curates an atmosphere
+              where quality is felt, not just seen.
             </p>
           </div>
 

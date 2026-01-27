@@ -102,6 +102,7 @@ const ChefsPick = () => {
                     src={dish.src}
                     alt={dish.alt}
                     fill
+                    loading="lazy"
                     className="object-cover transition-transform duration-1000 group-hover:scale-110"
                     sizes="(max-width: 768px) 100vw, 33vw"
                   />

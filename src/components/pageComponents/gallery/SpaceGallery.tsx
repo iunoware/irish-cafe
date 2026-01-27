@@ -80,17 +80,29 @@ export default function Gallery() {
   useGSAP(
     () => {
       // animation for images
-      gsap.utils.toArray<HTMLElement>(".bento-item").forEach((img, i) => {
+      // gsap.utils.toArray<HTMLElement>(".bento-item").forEach((img, i) => {
+      //   gsap.from(img, {
+      //     opacity: 0,
+      //     // y: 30,
+      //     duration: 1,
+      //     ease: "power2.out",
+      //     scrollTrigger: {
+      //       trigger: img,
+      //       start: "top 90%",
+      //     },
+      //     delay: i * 0.05,
+      //   });
+      // });
+
+      gsap.utils.toArray<HTMLElement>(".bento-item").forEach((img) => {
         gsap.from(img, {
           opacity: 0,
-          y: 30,
+          stagger: 0.2,
           duration: 1,
-          ease: "power2.out",
           scrollTrigger: {
             trigger: img,
-            start: "top 90%",
+            start: "top 80%",
           },
-          delay: i * 0.05,
         });
       });
 
@@ -138,7 +150,8 @@ export default function Gallery() {
                   src={img.src}
                   alt={img.alt}
                   fill
-                  className="object-cover rounded-md transition-all duration-1000 group-hover:scale-105 "
+                  loading="lazy"
+                  className="object-cover rounded-md"
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
               </div>

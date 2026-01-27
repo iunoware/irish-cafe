@@ -107,7 +107,7 @@ export default function Ambience() {
                 fill
                 className="object-cover transition-transform duration-2000 group-hover:scale-100 scale-105 brightness-[0.98]"
                 sizes="(max-width: 1024px) 100vw, 60vw"
-                priority
+                loading="lazy"
               />
               <div className="absolute inset-0 bg-black/5 mix-blend-multiply opacity-20 pointer-events-none" />
             </div>
@@ -142,6 +142,7 @@ export default function Ambience() {
                   src="/images/DSC01369.JPG"
                   alt="Coffee Shop at Heritage Madurai Hotel inspired interior"
                   fill
+                  loading="lazy"
                   className="object-cover hover:scale-105 transition-transform duration-1000"
                   sizes="20vw"
                 />
@@ -151,6 +152,7 @@ export default function Ambience() {
                   src="/images/DSC00073.JPG"
                   alt="Atmospheric Lighting Detail"
                   fill
+                  loading="lazy"
                   className="object-cover hover:scale-105 transition-transform duration-1000"
                   sizes="20vw"
                 />
