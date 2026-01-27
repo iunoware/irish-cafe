@@ -113,6 +113,7 @@ export default function Cusine() {
                 src={cuisines[0].image}
                 alt={cuisines[0].alt}
                 fill
+                loading="lazy"
                 className="object-cover scale-105 hover:scale-100 transition-transform duration-1000"
               />
               {/* <div className="absolute inset-0 bg-black/5" /> */}
@@ -142,6 +143,7 @@ export default function Cusine() {
                 src={cuisines[1].image}
                 alt={cuisines[1].alt}
                 fill
+                loading="lazy"
                 className="object-cover brightness-[0.9] scale-105 hover:scale-100 transition-transform duration-1000"
               />
               {/* <div className="absolute inset-0 bg-black/5" /> */}
@@ -204,6 +206,7 @@ export default function Cusine() {
                 src={cuisines[2].image}
                 alt={cuisines[2].alt}
                 fill
+                loading="lazy"
                 className="object-cover brightness-[0.9] scale-105 hover:scale-100 transition-transform duration-1000"
               />
               {/* <div className="absolute inset-0 bg-black/5" /> */}

@@ -118,6 +118,7 @@ export default function Hero() {
           src="/images/about-hero-back.png"
           alt="Atmospheric Aesthetic Cafe in Madurai Architecture"
           fill
+          // loading="lazy"
           className="object-cover "
           priority
         />
@@ -134,6 +135,7 @@ export default function Hero() {
             src="/images/best-cafe-in-madurai.webp"
             alt="Best Cafe in Madurai Interior Settings"
             fill
+            // loading="lazy"
             className="object-cover rounded-sm scale-105 hover:scale-100 transition-transition duration-500"
             priority
           />
@@ -150,6 +152,7 @@ export default function Hero() {
             src="/images/the-irish-cafe-about-2.webp"
             alt="Artistic Detail at our Aesthetic Cafe in Madurai"
             fill
+            // loading="lazy"
             className="object-cover rounded-sm scale-105 hover:scale-100 transition-transition duration-500"
             priority
           />

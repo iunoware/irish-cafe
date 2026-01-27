@@ -101,7 +101,7 @@ export default function Philosophy() {
               fill
               className="object-cover grayscale-0"
               sizes="(max-width: 768px) 100vw, 60vw"
-              priority={false}
+              loading="lazy"
             />
           </div>
 
@@ -113,10 +113,9 @@ export default function Philosophy() {
 
             <div className="space-y-8">
               <p className="paraReveal text-neutral-800 text-base md:text-lg leading-relaxed font-light">
-                We do not chase the new. Instead, we refine the necessary as the
-                best ambience cafe in Madurai — one where every detail is
-                weighed, measured, and considered before it ever reaches your
-                table.
+                We do not chase the new. Instead, we refine the necessary as the best
+                ambience cafe in Madurai — one where every detail is weighed, measured,
+                and considered before it ever reaches your table.
               </p>
 
               <p className="paraReveal text-neutral-800 text-base md:text-lg leading-relaxed font-light">

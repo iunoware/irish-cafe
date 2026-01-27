@@ -56,17 +56,16 @@ export default function AboutTeaser() {
                 The Story
               </span>
               <h2 className="font-serif text-4xl md:text-6xl text-zinc-900 leading-tight tracking-tight">
-                Crafted in Madurai, Inspired by{" "}
-                <span className="italic">the World.</span>
+                Crafted in Madurai, Inspired by <span className="italic">the World.</span>
               </h2>
             </div>
 
             <div className="space-y-8">
               <p className="font-sans text-zinc-500 text-sm md:text-lg leading-relaxed tracking-wide">
-                What began as a passion for global culinary traditions has
-                evolved into one of the top Cafés in Madurai. While offering the
-                modern comfort of cafes like Starbucks in Madurai, we bring
-                authentic Irish hospitality home.
+                What began as a passion for global culinary traditions has evolved into
+                one of the top Cafés in Madurai. While offering the modern comfort of
+                cafes like Starbucks in Madurai, we bring authentic Irish hospitality
+                home.
               </p>
 
               <Link
@@ -86,6 +85,7 @@ export default function AboutTeaser() {
                 src="/images/the-irish-cafe-about.webp"
                 alt="The Irish Cafe Story — leading the Cafés in Madurai"
                 fill
+                loading="lazy"
                 className="object-cover transition-transform duration-3000 hover:scale-105 brightness-[0.98]"
                 sizes="(max-width: 768px) 100vw, 60vw"
               />

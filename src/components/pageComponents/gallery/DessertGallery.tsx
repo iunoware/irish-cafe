@@ -81,17 +81,25 @@ export default function DessertGallery() {
   useGSAP(
     () => {
       // animation for images
-      gsap.utils.toArray<HTMLElement>(".bento-item").forEach((img, i) => {
+      // gsap.utils.toArray<HTMLElement>(".bento-item").forEach((img, i) => {
+      //   gsap.from(img, {
+      //     opacity: 0,
+      //     // y: 30,
+      //     duration: 1,
+      //     ease: "power2.out",
+      //     scrollTrigger: {
+      //       trigger: img,
+      //       start: "top 90%",
+      //     },
+      //     delay: i * 0.05,
+      //   });
+      // });
+
+      gsap.utils.toArray<HTMLElement>(".bento-item").forEach((img) => {
         gsap.from(img, {
           opacity: 0,
-          // y: 30,
+          stagger: 0.2,
           duration: 1,
-          ease: "power2.out",
-          scrollTrigger: {
-            trigger: img,
-            start: "top 90%",
-          },
-          delay: i * 0.05,
         });
       });
 
@@ -139,6 +147,7 @@ export default function DessertGallery() {
                   src={img.src}
                   alt={img.alt}
                   fill
+                  loading="lazy"
                   className="object-cover rounded-md transition-all duration-1000 group-hover:scale-105 "
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />

@@ -77,14 +77,14 @@ export default function Hero() {
           alt="The Irish Cafe Interior — one of the BEST Cafés in Madurai"
           fill
           className="object-cover object-center scale-105 hidden md:block animate-subtle-zoom"
-          priority
+          // loading="lazy"
         />
         <Image
           src="/images/mob-hero.jpg"
           alt="Best Cafe in Madurai — The Irish Cafe"
           fill
           className="object-cover object-center block md:hidden animate-subtle-zoom"
-          priority
+          // loading="lazy"
         />
         {/* Editorial Overlay */}
         <div className="absolute inset-0 block md:hidden bg-black/30" />
@@ -120,9 +120,8 @@ export default function Hero() {
             ref={contentRef}
             className="font-serif headline italic text-lg   md:text-white md:text-xl mix-blend-difference opacity-90 max-w-lg mx-auto leading-relaxed animate-slide-up animation-delay-600"
           >
-            Where tradition meets the temple city. Experience one of the BEST
-            Cafés in Madurai, offering premium coffee and authentic Irish
-            hospitality.
+            Where tradition meets the temple city. Experience one of the BEST Cafés in
+            Madurai, offering premium coffee and authentic Irish hospitality.
           </p>
         </div>
 

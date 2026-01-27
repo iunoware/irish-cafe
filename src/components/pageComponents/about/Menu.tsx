@@ -114,6 +114,7 @@ export default function Menu() {
                 src="/images/italian.webp"
                 alt="Italian cuisine details at our multi-cuisine cafe in Madurai"
                 fill
+                loading="lazy"
                 className="object-cover rounded-md"
                 sizes="(max-width: 768px) 100vw, 50vw"
               />
@@ -140,6 +141,7 @@ export default function Menu() {
                 src="/images/irish.jpg"
                 alt="Authentic Irish warmth and best ambience cafe in Madurai"
                 fill
+                loading="lazy"
                 className="object-cover rounded-md"
                 sizes="(max-width: 768px) 100vw, 50vw"
               />
@@ -167,6 +169,7 @@ export default function Menu() {
                 src="/images/DSC00125.webp"
                 alt="American classics at our cafe in Madurai bypass"
                 fill
+                loading="lazy"
                 className="object-cover rounded-md"
                 sizes="(max-width: 768px) 100vw, 50vw"
               />

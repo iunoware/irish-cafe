@@ -99,7 +99,7 @@ export default function Navbar() {
           </div>
 
           {/* Desktop Navigation - Right */}
-          <div className="hidden md:flex items-center justify-end space-x-12 flex-1">
+          <div className="hidden z-50 md:flex items-center justify-end space-x-12 flex-1">
             {rightLinks.map((link) => (
               <Link
                 key={link.name}
@@ -140,7 +140,7 @@ export default function Navbar() {
           isMobileMenuOpen ? "translate-y-0 opacity-100" : "-translate-y-full opacity-0"
         }`}
       >
-        <div className="flex flex-col h-full px-8 py-12 relative">
+        <div className="flex md:hidden flex-col h-full px-8 py-12 relative">
           <button
             onClick={() => setIsMobileMenuOpen(false)}
             className="absolute top-5 left-5 text-black p-2 hover:rotate-90 transition-transform duration-300"

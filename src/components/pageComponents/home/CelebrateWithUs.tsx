@@ -97,6 +97,7 @@ const CelebrateWithUs = () => {
                   src={event.image}
                   alt={event.title}
                   fill
+                  loading="lazy"
                   className="object-cover transition-transform duration-[2s] group-hover:scale-110 brightness-[0.85]"
                 />
                 <div className="absolute inset-0 bg-linear-to-t from-black/60 via-transparent to-transparent opacity-60" />

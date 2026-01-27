@@ -136,9 +136,10 @@ export default function SignatureDishes() {
                     src={dish.image}
                     alt={dish.alt}
                     fill
+                    loading="lazy"
                     className="object-cover scale-105 transition-transform duration-1000 group-hover:scale-100 brightness-[0.98]"
                     sizes="(max-width: 768px) 100vw, 60vw"
-                    priority={index === 0}
+                    // priority={index === 0}
                   />
                   {/* Subtle Grainy Overlay on Image */}
                   <div className="absolute inset-0 bg-black/20 mix-blend-multiply opacity-20 pointer-events-none" />
