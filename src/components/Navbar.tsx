@@ -200,8 +200,33 @@ export default function Navbar() {
               <p className="text-zinc-900 font-sans text-[10px] uppercase tracking-widest">
                 Connect
               </p>
-              <p className="text-black font-sans text-sm">Instagram</p>
-              <p className="text-black font-sans text-sm">Facebook</p>
+              <div className="flex flex-col gap-2">
+                <a
+                  href="https://www.instagram.com/theirish.cafe?igsh=czNhMmZvM2cxNWFh"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-black font-sans text-sm"
+                >
+                  Instagram
+                </a>
+                <a
+                  href="https://maps.app.goo.gl/8M8Rfu7nsBW2bPoNA"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-black font-sans text-sm"
+                >
+                  Location
+                </a>
+                <a
+                  // href="mailto:irishcafe@gmail.com"
+                  href="https://mail.google.com/mail/?view=cm&fs=1&to=irishcafe@gmail.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-black font-sans text-sm"
+                >
+                  Mail
+                </a>
+              </div>
             </div>
           </div>
         </div>

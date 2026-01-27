@@ -156,7 +156,7 @@ export default function FoodGallery() {
       gsap.utils.toArray<HTMLElement>(".bento-item").forEach((img, i) => {
         gsap.from(img, {
           opacity: 0,
-          y: 30,
+          // y: 30,
           duration: 1,
           ease: "power2.out",
           scrollTrigger: {
