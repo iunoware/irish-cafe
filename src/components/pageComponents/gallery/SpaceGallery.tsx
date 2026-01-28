@@ -1,13 +1,13 @@
-"use client";
+// "use client";
 
-import { useGSAP } from "@gsap/react";
+// import { useGSAP } from "@gsap/react";
 import Image from "next/image";
-import { useRef } from "react";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+// import { useRef } from "react";
+// import gsap from "gsap";
+// import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-gsap.registerPlugin(ScrollTrigger);
-
+// gsap.registerPlugin(ScrollTrigger);
+//
 const images = [
   // 1
   {
@@ -75,56 +75,59 @@ const images = [
 ];
 
 export default function Gallery() {
-  const containerRef = useRef<HTMLElement>(null);
+  // const containerRef = useRef<HTMLElement>(null);
 
-  useGSAP(
-    () => {
-      // animation for images
-      // gsap.utils.toArray<HTMLElement>(".bento-item").forEach((img, i) => {
-      //   gsap.from(img, {
-      //     opacity: 0,
-      //     // y: 30,
-      //     duration: 1,
-      //     ease: "power2.out",
-      //     scrollTrigger: {
-      //       trigger: img,
-      //       start: "top 90%",
-      //     },
-      //     delay: i * 0.05,
-      //   });
-      // });
+  // useGSAP(
+  //   () => {
+  //     // animation for images
+  //     // gsap.utils.toArray<HTMLElement>(".bento-item").forEach((img, i) => {
+  //     //   gsap.from(img, {
+  //     //     opacity: 0,
+  //     //     // y: 30,
+  //     //     duration: 1,
+  //     //     ease: "power2.out",
+  //     //     scrollTrigger: {
+  //     //       trigger: img,
+  //     //       start: "top 90%",
+  //     //     },
+  //     //     delay: i * 0.05,
+  //     //   });
+  //     // });
 
-      // gsap.utils.toArray<HTMLElement>(".bento-item").forEach((img) => {
-      //   gsap.from(img, {
-      //     opacity: 0,
-      //     stagger: 0.2,
-      //     duration: 1,
-      //     scrollTrigger: {
-      //       trigger: img,
-      //       start: "top 80%",
-      //     },
-      //   });
-      // });
+  //     // gsap.utils.toArray<HTMLElement>(".bento-item").forEach((img) => {
+  //     //   gsap.from(img, {
+  //     //     opacity: 0,
+  //     //     stagger: 0.2,
+  //     //     duration: 1,
+  //     //     scrollTrigger: {
+  //     //       trigger: img,
+  //     //       start: "top 80%",
+  //     //     },
+  //     //   });
+  //     // });
 
-      // fade in animation for text
-      gsap.utils.toArray<HTMLElement>(".text-reveal").forEach((el, i) => {
-        gsap.from(el, {
-          y: 20,
-          opacity: 0,
-          duration: 1,
-          scrollTrigger: {
-            trigger: el,
-            start: "top 85%",
-          },
-          delay: i * 0.1,
-        });
-      });
-    },
-    { scope: containerRef },
-  );
+  //     // fade in animation for text
+  //     gsap.utils.toArray<HTMLElement>(".text-reveal").forEach((el, i) => {
+  //       gsap.from(el, {
+  //         y: 20,
+  //         opacity: 0,
+  //         duration: 1,
+  //         scrollTrigger: {
+  //           trigger: el,
+  //           start: "top 85%",
+  //         },
+  //         delay: i * 0.1,
+  //       });
+  //     });
+  //   },
+  //   { scope: containerRef },
+  // );
 
   return (
-    <section ref={containerRef} className="w-full relative py-24 md:py-40">
+    <section
+      // ref={containerRef}
+      className="w-full relative py-24 md:py-40"
+    >
       <div className="container mx-auto px-6 md:px-12 lg:px-24">
         {/* Editorial Heading Block */}
         <div className="mb-20 md:mb-32 max-w-sm">
