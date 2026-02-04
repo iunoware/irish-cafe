@@ -1,6 +1,7 @@
 import Hero from "../components/pageComponents/home/Hero";
 import Philosophy from "../components/pageComponents/home/Philosophy";
 import Cuisine from "../components/pageComponents/home/Cusine";
+import WoodFiredPizza from "../components/pageComponents/home/WoodFiredPizza";
 import SignatureDishes from "../components/pageComponents/home/SignatureDishes";
 import AboutTeaser from "../components/pageComponents/home/AboutTeaser";
 import Ambience from "../components/pageComponents/home/Ambience";
@@ -17,6 +18,7 @@ export default function Home() {
       <Hero />
       <Philosophy />
       <Cuisine />
+      <WoodFiredPizza />
       <SignatureDishes />
       <AboutTeaser />
       <Ambience />

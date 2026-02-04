@@ -3,8 +3,9 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import Image from "next/image";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import OrderModal from "@/components/shared/OrderModal";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -13,6 +14,7 @@ export default function Hero() {
   const containerRef = useRef<HTMLElement>(null);
   const textRef = useRef<HTMLHeadingElement>(null);
   const contentRef = useRef<HTMLParagraphElement>(null);
+  const [open, setOpen] = useState(false);
 
   useGSAP(
     () => {
@@ -70,6 +72,8 @@ export default function Hero() {
       ref={containerRef}
       className="relative h-screen w-full overflow-hidden flex items-start md:items-center justify-start text-white bg-black"
     >
+      <OrderModal isOpen={open} onClose={() => setOpen(false)} />
+
       {/* Background Image with subtle zoom-in effect */}
       <div ref={imageRef} className="back-layer absolute w-full h-full">
         <Image
@@ -77,14 +81,14 @@ export default function Hero() {
           alt="The Irish Cafe Interior — one of the BEST Cafés in Madurai"
           fill
           className="object-cover object-center scale-105 hidden md:block animate-subtle-zoom"
-          // loading="lazy"
+        // loading="lazy"
         />
         <Image
           src="/images/mob-hero.jpg"
           alt="Best Cafe in Madurai — The Irish Cafe"
           fill
           className="object-cover object-center block md:hidden animate-subtle-zoom"
-          // loading="lazy"
+        // loading="lazy"
         />
         {/* Editorial Overlay */}
         <div className="absolute inset-0 block md:hidden bg-black/30" />
@@ -120,8 +124,9 @@ export default function Hero() {
             ref={contentRef}
             className="font-serif headline italic text-lg   md:text-white md:text-xl mix-blend-difference opacity-90 max-w-lg mx-auto leading-relaxed animate-slide-up animation-delay-600"
           >
-            Where tradition meets the temple city. Experience one of the BEST Cafés in
-            Madurai, offering premium coffee and authentic Irish hospitality.
+            Where tradition meets the temple city. Experience one of the BEST
+            Cafés in Madurai, offering premium coffee and authentic Irish
+            hospitality.
           </p>
         </div>
 
@@ -136,21 +141,17 @@ export default function Hero() {
             </span>
             <div className="absolute inset-0 bg-black translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-[cubic-bezier(0.19,1,0.22,1)]" />
           </a>
-          <a
-            href="https://www.zomato.com/madurai/the-irish-cafe-kk-nagar"
-            target="_blank"
-            className="inline-block h-fit w-fit group relative font-sans text-[11px] uppercase tracking-[0.3em] py-2 px-4 md:py-4 md:px-10 border border-white/30 hover:border-white transition-all duration-500 overflow-hidden"
+          <button
+            onClick={() => setOpen(true)}
+            className="inline-block h-fit w-fit group relative font-sans text-[11px] uppercase tracking-[0.3em] py-2 px-4 md:py-4 md:px-10 border border-white/30 hover:border-white transition-all duration-500 overflow-hidden cursor-pointer"
           >
             <span className="relative z-10 group-hover:text-black transition-colors duration-500">
               Order Online
             </span>
             <div className="absolute inset-0 bg-white translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-[cubic-bezier(0.19,1,0.22,1)]" />
-          </a>
+          </button>
         </div>
       </div>
-      {/* <div className="w-full z-10 h-full flex items-center justify-center">
-        <h1 className="text-9xl absolute top-65 font-semibold ">Irish Cafe</h1>
-      </div> */}
 
       {/* Scroll Indicator */}
       <div className="absolute bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center space-y-4 opacity-40 animate-fade-in animation-delay-1500">
