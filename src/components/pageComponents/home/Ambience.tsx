@@ -99,18 +99,15 @@ export default function Ambience() {
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col lg:flex-row gap-16 lg:gap-24 items-start">
           {/* Visual Anchor - Dominant Interior Image */}
-          <div
-            ref={anchorRef}
-            className="w-full lg:w-[60%] relative z-10 opacity-0"
-          >
+          <div ref={anchorRef} className="w-full lg:w-[60%] relative z-10 opacity-0">
             <div className="aspect-4/5 rounded-sm md:aspect-video lg:aspect-4/5 relative overflow-hidden shadow-[40px_40px_80px_rgba(0,0,0,0.06)] group">
               <Image
                 src="/images/DSC01466.JPG"
-                alt="The Irish Cafe Interior"
+                alt="The Irish Cafe — an aesthetic cafe in Madurai lifestyle"
                 fill
                 className="object-cover transition-transform duration-2000 group-hover:scale-100 scale-105 brightness-[0.98]"
                 sizes="(max-width: 1024px) 100vw, 60vw"
-                priority
+                loading="lazy"
               />
               <div className="absolute inset-0 bg-black/5 mix-blend-multiply opacity-20 pointer-events-none" />
             </div>
@@ -129,10 +126,9 @@ export default function Ambience() {
               </div>
 
               <p className="font-sans text-zinc-500 text-sm md:text-lg leading-relaxed tracking-wide max-w-sm">
-                Step into a space shaped for comfort and connection. Soft
-                lighting, tactile finishes, and a carefully curated soundtrack
-                set the tone for lingering conversations and relaxed dining,
-                long after the last course is served.
+                Step into a space shaped for comfort and connection. Soft lighting,
+                tactile finishes, and a curated atmosphere set the tone for relaxed
+                dining, long after the last course is served.
               </p>
             </div>
 
@@ -144,8 +140,9 @@ export default function Ambience() {
               <div className="side-image w-full rounded-sm aspect-square relative overflow-hidden shadow-2xl opacity-0 mt-8">
                 <Image
                   src="/images/DSC01369.JPG"
-                  alt="Interior Detail"
+                  alt="Coffee Shop at Heritage Madurai Hotel inspired interior"
                   fill
+                  loading="lazy"
                   className="object-cover hover:scale-105 transition-transform duration-1000"
                   sizes="20vw"
                 />
@@ -153,8 +150,9 @@ export default function Ambience() {
               <div className="side-image rounded-sm w-full aspect-3/4 relative overflow-hidden shadow-2xl opacity-0 -mt-12">
                 <Image
                   src="/images/DSC00073.JPG"
-                  alt="Atmospheric Lighting"
+                  alt="Atmospheric Lighting Detail"
                   fill
+                  loading="lazy"
                   className="object-cover hover:scale-105 transition-transform duration-1000"
                   sizes="20vw"
                 />

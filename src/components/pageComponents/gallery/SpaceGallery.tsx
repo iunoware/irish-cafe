@@ -1,39 +1,39 @@
-"use client";
+// "use client";
 
-import { useGSAP } from "@gsap/react";
+// import { useGSAP } from "@gsap/react";
 import Image from "next/image";
-import { useRef } from "react";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+// import { useRef } from "react";
+// import gsap from "gsap";
+// import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-gsap.registerPlugin(ScrollTrigger);
-
+// gsap.registerPlugin(ScrollTrigger);
+//
 const images = [
   // 1
   {
     src: "/images/best-cafe-in-madurai.webp",
-    alt: "Wide cafe interior",
+    alt: "Wide interior of our aesthetic cafe in Madurai",
     className: "md:col-span-8 md:row-span-2",
     aspect: "aspect-[16/10] md:aspect-auto md:h-full",
   },
   // 2
   {
     src: "/images/irish-cafe-heritage.webp",
-    alt: "Detail of seating area",
+    alt: "Detail of seating area in the best ambience cafe in Madurai",
     className: "md:col-span-4 md:row-span-1",
     aspect: "aspect-square md:aspect-auto md:h-full",
   },
   // 3
   {
     src: "/images/DSC00050.JPG",
-    alt: "Atmospheric corner",
+    alt: "Atmospheric corner at the best cafe in Madurai",
     className: "md:col-span-4 md:row-span-1",
     aspect: "aspect-square md:aspect-auto md:h-full",
   },
   // 4
   {
-    src: "/images/DSC01369.jpg",
-    alt: "Minimal tabletop scene",
+    src: "/images/DSC01369.JPG",
+    alt: "Minimal tabletop scene in an aesthetic cafe in Madurai",
     className: "md:col-span-4 md:row-span-2",
     aspect: "aspect-[3/4] md:aspect-auto md:h-full",
   },
@@ -46,7 +46,7 @@ const images = [
   },
   // 7
   {
-    src: "/images/DSC01466.jpg",
+    src: "/images/DSC01466.JPG",
     alt: "Architectural detail",
     className: "md:col-span-3 md:row-span-2",
     aspect: "aspect-[2/3] md:aspect-auto md:h-full",
@@ -75,44 +75,59 @@ const images = [
 ];
 
 export default function Gallery() {
-  const containerRef = useRef<HTMLElement>(null);
+  // const containerRef = useRef<HTMLElement>(null);
 
-  useGSAP(
-    () => {
-      // animation for images
-      gsap.utils.toArray<HTMLElement>(".bento-item").forEach((img, i) => {
-        gsap.from(img, {
-          opacity: 0,
-          y: 30,
-          duration: 1,
-          ease: "power2.out",
-          scrollTrigger: {
-            trigger: img,
-            start: "top 90%",
-          },
-          delay: i * 0.05,
-        });
-      });
+  // useGSAP(
+  //   () => {
+  //     // animation for images
+  //     // gsap.utils.toArray<HTMLElement>(".bento-item").forEach((img, i) => {
+  //     //   gsap.from(img, {
+  //     //     opacity: 0,
+  //     //     // y: 30,
+  //     //     duration: 1,
+  //     //     ease: "power2.out",
+  //     //     scrollTrigger: {
+  //     //       trigger: img,
+  //     //       start: "top 90%",
+  //     //     },
+  //     //     delay: i * 0.05,
+  //     //   });
+  //     // });
 
-      // fade in animation for text
-      gsap.utils.toArray<HTMLElement>(".text-reveal").forEach((el, i) => {
-        gsap.from(el, {
-          y: 20,
-          opacity: 0,
-          duration: 1,
-          scrollTrigger: {
-            trigger: el,
-            start: "top 85%",
-          },
-          delay: i * 0.1,
-        });
-      });
-    },
-    { scope: containerRef },
-  );
+  //     // gsap.utils.toArray<HTMLElement>(".bento-item").forEach((img) => {
+  //     //   gsap.from(img, {
+  //     //     opacity: 0,
+  //     //     stagger: 0.2,
+  //     //     duration: 1,
+  //     //     scrollTrigger: {
+  //     //       trigger: img,
+  //     //       start: "top 80%",
+  //     //     },
+  //     //   });
+  //     // });
+
+  //     // fade in animation for text
+  //     gsap.utils.toArray<HTMLElement>(".text-reveal").forEach((el, i) => {
+  //       gsap.from(el, {
+  //         y: 20,
+  //         opacity: 0,
+  //         duration: 1,
+  //         scrollTrigger: {
+  //           trigger: el,
+  //           start: "top 85%",
+  //         },
+  //         delay: i * 0.1,
+  //       });
+  //     });
+  //   },
+  //   { scope: containerRef },
+  // );
 
   return (
-    <section ref={containerRef} className="w-full relative py-24 md:py-40">
+    <section
+      // ref={containerRef}
+      className="w-full relative py-24 md:py-40"
+    >
       <div className="container mx-auto px-6 md:px-12 lg:px-24">
         {/* Editorial Heading Block */}
         <div className="mb-20 md:mb-32 max-w-sm">
@@ -121,8 +136,8 @@ export default function Gallery() {
           </h2>
           <div className="text-reveal w-12 h-1px bg-neutral-300 mb-6"></div>
           <p className="text-reveal text-sm md:text-base font-sans tracking-wide text-neutral-500 font-light leading-relaxed uppercase">
-            Quietly occupied. <br />
-            Slowly considered.
+            Experience the best ambience cafe <br />
+            in Madurai. Slowly considered.
           </p>
         </div>
 
@@ -138,7 +153,8 @@ export default function Gallery() {
                   src={img.src}
                   alt={img.alt}
                   fill
-                  className="object-cover rounded-md transition-all duration-1000 group-hover:scale-105 "
+                  loading="lazy"
+                  className="object-cover rounded-md"
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
               </div>

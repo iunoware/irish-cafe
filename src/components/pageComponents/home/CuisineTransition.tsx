@@ -37,7 +37,7 @@ export default function CuisineTransition() {
           scale: 1,
           duration: 1,
           ease: "power3.inOut",
-        }
+        },
       );
 
       // Sequence: Image 2 Slide In
@@ -53,7 +53,7 @@ export default function CuisineTransition() {
           duration: 1,
           ease: "power2.out",
         },
-        "-=0.5"
+        "-=0.5",
       );
 
       // Sequence: Image 3 Reveal
@@ -61,7 +61,7 @@ export default function CuisineTransition() {
         img3Ref.current,
         { y: "40%", opacity: 0, scale: 1.1 },
         { y: "0%", opacity: 1, scale: 1, duration: 1, ease: "power3.out" },
-        "-=0.7"
+        "-=0.7",
       );
 
       // Sequence: Text Fade In
@@ -69,7 +69,7 @@ export default function CuisineTransition() {
         textRef.current,
         { opacity: 0, y: 30 },
         { opacity: 1, y: 0, duration: 0.8, ease: "power2.out" },
-        "-=0.3"
+        "-=0.3",
       );
     }, containerRef);
 
@@ -97,7 +97,7 @@ export default function CuisineTransition() {
             alt="Cuisine Foundation"
             fill
             className="object-cover "
-            priority
+            loading="lazy"
           />
         </div>
 
@@ -110,6 +110,7 @@ export default function CuisineTransition() {
             src="/images/italian.JPG"
             alt="Cuisine Layer"
             fill
+            loading="lazy"
             className="object-cover  shadow-2xl"
           />
         </div>
@@ -123,6 +124,7 @@ export default function CuisineTransition() {
             src="/images/american.JPG"
             alt="Cuisine Detail"
             fill
+            loading="lazy"
             className="object-cover  shadow-2xl"
           />
         </div>

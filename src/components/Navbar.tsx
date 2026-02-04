@@ -99,7 +99,7 @@ export default function Navbar() {
           </div>
 
           {/* Desktop Navigation - Right */}
-          <div className="hidden md:flex items-center justify-end space-x-12 flex-1">
+          <div className="hidden z-50 md:flex items-center justify-end space-x-12 flex-1">
             {rightLinks.map((link) => (
               <Link
                 key={link.name}
@@ -140,7 +140,7 @@ export default function Navbar() {
           isMobileMenuOpen ? "translate-y-0 opacity-100" : "-translate-y-full opacity-0"
         }`}
       >
-        <div className="flex flex-col h-full px-8 py-12 relative">
+        <div className="flex md:hidden flex-col h-full px-8 py-12 relative">
           <button
             onClick={() => setIsMobileMenuOpen(false)}
             className="absolute top-5 left-5 text-black p-2 hover:rotate-90 transition-transform duration-300"
@@ -200,8 +200,33 @@ export default function Navbar() {
               <p className="text-zinc-900 font-sans text-[10px] uppercase tracking-widest">
                 Connect
               </p>
-              <p className="text-black font-sans text-sm">Instagram</p>
-              <p className="text-black font-sans text-sm">Facebook</p>
+              <div className="flex flex-col gap-2">
+                <a
+                  href="https://www.instagram.com/theirish.cafe?igsh=czNhMmZvM2cxNWFh"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-black font-sans text-sm"
+                >
+                  Instagram
+                </a>
+                <a
+                  href="https://maps.app.goo.gl/8M8Rfu7nsBW2bPoNA"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-black font-sans text-sm"
+                >
+                  Location
+                </a>
+                <a
+                  // href="mailto:irishcafe@gmail.com"
+                  href="https://mail.google.com/mail/?view=cm&fs=1&to=irishcafe@gmail.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-black font-sans text-sm"
+                >
+                  Mail
+                </a>
+              </div>
             </div>
           </div>
         </div>

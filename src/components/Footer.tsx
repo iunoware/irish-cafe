@@ -27,9 +27,8 @@ export default function Footer() {
               />
             </Link>
             <p className="text-sm leading-relaxed max-w-xs text-white/70">
-              A premium international dining destination in Madurai, where
-              exceptional Irish, Italian, and American flavours meet unhurried
-              comfort.
+              A premium international dining destination in Madurai, where exceptional
+              Irish, Italian, and American flavours meet unhurried comfort.
             </p>
           </div>
 
@@ -58,13 +57,13 @@ export default function Footer() {
           </div>
 
           {/* Contact Details */}
-          <div className="flex flex-col space-y-8">
+          <div className="flex flex-col space-y-2">
             <h4 className="text-white/90 text-[11px] uppercase tracking-[0.3em] font-semibold">
               Location
             </h4>
             <div className="space-y-6 text-sm">
               <div className="space-y-2">
-                <p className="leading-relaxed text-white/70">
+                <p className="leading-tight text-white/70">
                   558, 4th West Street,
                   <br />
                   KK Nagar, Madurai,
@@ -72,15 +71,32 @@ export default function Footer() {
                   Tamil Nadu 625020
                 </p>
               </div>
+
               <div className="flex flex-col space-y-2">
                 <h5 className="text-white/90 text-[10px] uppercase tracking-[0.2em] font-medium">
                   Reservation
                 </h5>
                 <a
                   href="tel:+918148987007"
+                  target="_blank"
                   className="text-white/70 hover:text-zinc-200 transition-colors duration-300 font-medium"
                 >
                   +91 81489 87007
+                </a>
+              </div>
+
+              <div className="flex flex-col space-y-2">
+                <h5 className="text-white/90 text-[10px] uppercase tracking-[0.2em] font-medium">
+                  Mail
+                </h5>
+                <a
+                  // href="mailto:irishcafe@gmail.com"
+                  href="https://mail.google.com/mail/?view=cm&fs=1&to=irishcafe@gmail.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white/70 hover:text-zinc-200 transition-colors duration-300 font-medium"
+                >
+                  irishcafe@gmail.com
                 </a>
               </div>
             </div>
@@ -94,7 +110,7 @@ export default function Footer() {
               </h4>
               <nav className="flex flex-col space-y-4 text-sm">
                 <a
-                  href="https://www.instagram.com/theirish.cafe?igsh=cTB2N3lvYWs1YjMw"
+                  href="https://www.instagram.com/theirish.cafe?igsh=czNhMmZvM2cxNWFh"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-white text-white/80 transition-colors w-fit flex items-center gap-2 group"
@@ -135,12 +151,8 @@ export default function Footer() {
             </p>
             <div className="hidden md:block w-px h-3 bg-zinc-200" />
             <div className="flex items-center gap-6">
-              <p className="hover:text-zinc-600 transition-colors">
-                Privacy Policy
-              </p>
-              <p className="hover:text-zinc-600 transition-colors">
-                Terms of Service
-              </p>
+              <p className="hover:text-zinc-600 transition-colors">Privacy Policy</p>
+              <p className="hover:text-zinc-600 transition-colors">Terms of Service</p>
             </div>
           </div>
         </div>

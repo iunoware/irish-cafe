@@ -52,10 +52,10 @@ export default function Philosophy() {
             >
               <Image
                 src="/images/DSC01521.JPG"
-                alt="Atmospheric Interior of The Irish Cafe"
+                alt="Atmospheric aesthetic cafe in Madurai — The Irish Cafe"
                 fill
                 className="object-cover brightness-[0.85] transition-transform duration-1000 group-hover:scale-105"
-                priority
+                loading="lazy"
               />
               {/* Subtle Overlay to integrate text better if they overlap */}
               <div className="absolute inset-0 bg-black/5" />
@@ -92,10 +92,9 @@ export default function Philosophy() {
               <div className="w-12 h-px bg-zinc-200" />
 
               <p className="font-sans text-zinc-500 text-sm md:text-lg leading-relaxed tracking-wide">
-                At The Irish Cafe, food is approached with intention. From
-                carefully composed flavours to thoughtfully designed spaces,
-                every element is created to invite unhurried dining and
-                meaningful moments at the table.
+                At The Irish Cafe, food is approached with intention. From carefully
+                composed flavours to creating the best cafe in Madurai for couples, our
+                aesthetic cafe in Madurai is designed for meaningful moments.
               </p>
             </div>
           </div>
