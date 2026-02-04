@@ -11,7 +11,7 @@ import Image from "next/image";
 const foodImages = [
   // 1
   {
-    src: "/images/DSC00178.jpg",
+    src: "/images/DSC00178.JPG",
     alt: "White sauce pasta at our multi-cuisine cafe in Madurai",
     dishName: "white sauce pasta",
     className: "md:col-span-4 md:row-span-2",
@@ -27,7 +27,7 @@ const foodImages = [
   },
   // 3
   {
-    src: "/images/DSC01547.JPG",
+    src: "/images/DSC01547.jpg",
     alt: "Fresh ingredients at the best cafe in Madurai",
     dishName: "dish-3",
     className: "md:col-span-4 md:row-span-1",
