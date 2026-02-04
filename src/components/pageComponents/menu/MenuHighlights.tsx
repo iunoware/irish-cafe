@@ -36,7 +36,7 @@ const HIGHLIGHTS = [
         dish: "Pasta Alfredo ",
       },
       {
-        src: "/images/DSC00126.jpg",
+        src: "/images/DSC00126.JPG",
         span: "col-span-2 row-span-1",
         alt: "Traditional Irish Stew at the best cafe in Madurai",
         dish: "Lamb Dish",

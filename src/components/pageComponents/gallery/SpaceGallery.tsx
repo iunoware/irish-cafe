@@ -32,7 +32,7 @@ const images = [
   },
   // 4
   {
-    src: "/images/DSC01369.jpg",
+    src: "/images/DSC01369.JPG",
     alt: "Minimal tabletop scene in an aesthetic cafe in Madurai",
     className: "md:col-span-4 md:row-span-2",
     aspect: "aspect-[3/4] md:aspect-auto md:h-full",
@@ -46,7 +46,7 @@ const images = [
   },
   // 7
   {
-    src: "/images/DSC01466.jpg",
+    src: "/images/DSC01466.JPG",
     alt: "Architectural detail",
     className: "md:col-span-3 md:row-span-2",
     aspect: "aspect-[2/3] md:aspect-auto md:h-full",
