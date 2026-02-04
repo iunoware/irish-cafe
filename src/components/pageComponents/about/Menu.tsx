@@ -138,7 +138,8 @@ export default function Menu() {
           <div className="w-full md:w-6/12">
             <div className="image-container-fade rounded-md relative w-full max-w-3xl lg:max-w-4xl xl:max-w-5xl aspect-video mx-auto">
               <Image
-                src="/images/irish.jpg"
+                // src="/images/irish.jpg"
+                src="/images/DSC00126.JPG"
                 alt="Authentic Irish warmth and best ambience cafe in Madurai"
                 fill
                 loading="lazy"

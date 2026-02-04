@@ -21,7 +21,7 @@ export default function Cusine() {
     {
       name: "Irish",
       tagline: "AUTHENTIC COMFORT",
-      image: "/images/irish.jpg",
+      image: "/images/irish.JPG",
       alt: "BEST Cafés in Madurai",
       layout: "large-left",
     },
