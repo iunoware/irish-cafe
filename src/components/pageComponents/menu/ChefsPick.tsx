@@ -12,7 +12,7 @@ const CHEFS_PICKS = [
   {
     name: "Wood Fire Pizza",
     description: "Nothing Beats the Crisp, Charred Crust of a wood.",
-    src: "/images/DSC00139.webp",
+    src: "/images/DSC00139.jpg",
     alt: "Best cafe in Madurai",
   },
   {
@@ -23,7 +23,8 @@ const CHEFS_PICKS = [
   },
   {
     name: "Tuscan Cheesy Chicken",
-    description: "Peri-peri Crumbed Chicken Smothered in a molten Cheesy Sauce.",
+    description:
+      "Peri-peri Crumbed Chicken Smothered in a molten Cheesy Sauce.",
     src: "/images/somethinggood.jpeg",
     alt: "Best ambience cafe in Madurai",
   },
@@ -69,8 +70,8 @@ const ChefsPick = () => {
       ref={containerRef}
       className="bg-white relative py-32 md:py-48 overflow-hidden"
     >
-      <div className="absolute inset-0 opacity-60 pointer-events-none">
-        <div className="absolute inset-0 bg-[url('/images/clean-gray-paper.png')]" />
+      <div className="absolute inset-0 opacity-60 pointer-events-none z-0">
+        <div className="absolute inset-0 bg-[url('/images/floral-patterns.png')] " />
       </div>
       <div className="container mx-auto px-6 md:px-12 lg:px-24">
         <div className="flex flex-col lg:flex-row gap-20 lg:gap-32">
@@ -83,9 +84,9 @@ const ChefsPick = () => {
               Chef’s <br /> <span className="italic">Pick.</span>
             </h2>
             <p className="font-inter text-lg leading-relaxed text-zinc-600">
-              Each season, our head chef selects dishes that best embody our multi-cuisine
-              cafe in Madurai philosophy. These highlights represent why we are among the
-              best restaurants in Madurai.
+              Each season, our head chef selects dishes that best embody our
+              multi-cuisine cafe in Madurai philosophy. These highlights
+              represent why we are among the best restaurants in Madurai.
             </p>
             <div className="mt-12 h-px w-24 bg-zinc-900" />
           </div>

@@ -38,10 +38,9 @@ export default function Philosophy() {
   return (
     <section ref={sectionRef} className="relative bg-white py-24 md:py-28 px-6">
       {/* Subtle Background Texture - Grainy effect using CSS-only approach if possible, or just clean zinc */}
-      <div className="absolute inset-0 opacity-60 pointer-events-none">
-        <div className="absolute inset-0 bg-[url('/images/clean-gray-paper.png')]" />
+      <div className="absolute inset-0 opacity-60 pointer-events-none z-0">
+        <div className="absolute inset-0 bg-[url('/images/floral-patterns.png')] " />
       </div>
-
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-col lg:flex-row items-stretch gap-16 md:gap-0 relative">
           {/* Large Dominant Image Area - Occupies major visual weight */}
@@ -92,9 +91,10 @@ export default function Philosophy() {
               <div className="w-12 h-px bg-zinc-200" />
 
               <p className="font-sans text-zinc-500 text-sm md:text-lg leading-relaxed tracking-wide">
-                At The Irish Cafe, food is approached with intention. From carefully
-                composed flavours to creating the best cafe in Madurai for couples, our
-                aesthetic cafe in Madurai is designed for meaningful moments.
+                At The Irish Cafe, food is approached with intention. From
+                carefully composed flavours to creating the best cafe in Madurai
+                for couples, our aesthetic cafe in Madurai is designed for
+                meaningful moments.
               </p>
             </div>
           </div>

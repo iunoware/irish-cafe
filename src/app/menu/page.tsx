@@ -6,6 +6,9 @@ import MenuCTA from "@/components/pageComponents/menu/MenuCTA";
 const page = () => {
   return (
     <>
+      <div className="absolute inset-0 opacity-60 pointer-events-none z-0">
+        <div className="absolute inset-0 bg-[url('/images/floral-patterns.png')] " />
+      </div>
       <Hero />
       <ChefsPick />
       <MenuHighlights />

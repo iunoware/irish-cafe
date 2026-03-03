@@ -32,7 +32,11 @@ const HandDrawnPatterns = () => (
       fill="none"
       stroke="currentColor"
     >
-      <path d="M10,90 Q50,80 60,40 Q70,70 90,60" strokeWidth="1" strokeLinecap="round" />
+      <path
+        d="M10,90 Q50,80 60,40 Q70,70 90,60"
+        strokeWidth="1"
+        strokeLinecap="round"
+      />
       <circle cx="60" cy="40" r="3" fill="currentColor" opacity="0.5" />
       <path
         d="M55,35 Q60,20 65,35 Q80,40 65,45 Q60,60 55,45 Q40,40 55,35"
@@ -109,8 +113,8 @@ export default function WelcomeBoard() {
       className="relative bg-white py-24 md:py-48 px-6 overflow-hidden flex items-center justify-center select-text"
     >
       {/* Quiet Surrounding Space Texture */}
-      <div className="absolute inset-0 opacity-60 pointer-events-none">
-        <div className="absolute inset-0 bg-[url('/images/clean-gray-paper.png')]" />
+      <div className="absolute inset-0 opacity-60 pointer-events-none z-0">
+        <div className="absolute inset-0 bg-[url('/images/floral-patterns.png')] " />
       </div>
 
       {/* The Physical Board Object */}

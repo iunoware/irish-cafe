@@ -7,8 +7,8 @@ import MenuCTA from "@/components/pageComponents/menu/MenuCTA";
 const page = () => {
   return (
     <main className="relative bg-white">
-      <div className="absolute inset-0 opacity-60 pointer-events-none">
-        <div className="absolute inset-0 bg-[url('/images/clean-gray-paper.png')]" />
+      <div className="absolute inset-0 opacity-60 pointer-events-none z-0">
+        <div className="absolute inset-0 bg-[url('/images/floral-patterns.png')] " />
       </div>
       <Hero />
       <LocationSection />

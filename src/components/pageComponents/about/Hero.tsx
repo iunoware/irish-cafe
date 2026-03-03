@@ -115,14 +115,14 @@ export default function Hero() {
         className="absolute inset-0 z-0 h-[120%] w-full -top-[10%] opacity-60"
       >
         <Image
-          src="/images/about-hero-back.png"
+          src="/images/DSC01521.jpg"
           alt="Atmospheric Aesthetic Cafe in Madurai Architecture"
           fill
           // loading="lazy"
-          className="object-cover "
+          className="object-cover blur-[2px]"
           priority
         />
-        <div className="absolute inset-0 bg-black/40" />
+        <div className="absolute  inset-0 bg-black/40" />
       </div>
 
       {/* left image */}
@@ -145,11 +145,11 @@ export default function Hero() {
       {/* right image */}
       <div
         ref={frontLayerRef}
-        className="absolute right-[10%] bottom-[15%] z-20 aspect-3/4 w-[65vw] md:w-[20vw] shadow-2xl"
+        className="absolute right-[10%] bottom-[15%] z-20 aspect-video w-[65vw] md:w-[30vw] shadow-2xl"
       >
         <div className="relative h-full w-full overflow-hidden ">
           <Image
-            src="/images/the-irish-cafe-about-2.webp"
+            src="/images/DSC01300.JPG"
             alt="Artistic Detail at our Aesthetic Cafe in Madurai"
             fill
             // loading="lazy"

@@ -12,63 +12,63 @@ const images = [
   // 1
   {
     src: "/images/best-cafe-in-madurai.webp",
-    alt: "Wide interior of our aesthetic cafe in Madurai",
+    alt: "Cheese wheel Pasta in Madurai",
     className: "md:col-span-8 md:row-span-2",
     aspect: "aspect-[16/10] md:aspect-auto md:h-full",
   },
   // 2
   {
     src: "/images/irish-cafe-heritage.webp",
-    alt: "Detail of seating area in the best ambience cafe in Madurai",
+    alt: "Oven Crust Pizza in Madurai",
     className: "md:col-span-4 md:row-span-1",
     aspect: "aspect-square md:aspect-auto md:h-full",
   },
   // 3
   {
     src: "/images/DSC00050.JPG",
-    alt: "Atmospheric corner at the best cafe in Madurai",
+    alt: "Thin crust pizza in Madurai",
     className: "md:col-span-4 md:row-span-1",
     aspect: "aspect-square md:aspect-auto md:h-full",
   },
   // 4
   {
     src: "/images/DSC01369.JPG",
-    alt: "Minimal tabletop scene in an aesthetic cafe in Madurai",
+    alt: "Matcha Latte in Madurai",
     className: "md:col-span-4 md:row-span-2",
     aspect: "aspect-[3/4] md:aspect-auto md:h-full",
   },
   // 5
   {
     src: "/images/DSC01328.JPG",
-    alt: "Light falling on surfaces",
+    alt: "Best Macha Cafe in Madurai",
     className: "md:col-span-5 md:row-span-1",
     aspect: "aspect-video md:aspect-auto md:h-full",
   },
   // 7
   {
     src: "/images/DSC01466.JPG",
-    alt: "Architectural detail",
+    alt: "Best cafe in Madurai for couples",
     className: "md:col-span-3 md:row-span-2",
     aspect: "aspect-[2/3] md:aspect-auto md:h-full",
   },
   // 6
   {
     src: "/images/ambient.webp",
-    alt: "Calm cafe atmosphere",
+    alt: "Vintage cafe in Madurai",
     className: "md:col-span-5 md:row-span-1",
     aspect: "aspect-video md:aspect-auto md:h-full",
   },
   // 8
   {
     src: "/images/DSC01300.JPG",
-    alt: "Interior perspective",
+    alt: "Best Interior Cafe in Madurai",
     className: "md:col-span-4 md:row-span-1",
     aspect: "aspect-square md:aspect-auto md:h-full",
   },
   // 9
   {
     src: "/images/the-irish-cafe-about.webp",
-    alt: "Quiet moment",
+    alt: "Cafe in Madurai with best ambience",
     className: "md:col-span-5 md:row-span-1",
     aspect: "aspect-video md:aspect-auto md:h-full",
   },

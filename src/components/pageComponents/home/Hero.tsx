@@ -38,16 +38,16 @@ export default function Hero() {
       });
 
       // 1️⃣ Parallax-like image movement (scroll-based)
-      // gsap.to(imageRef.current, {
-      //   yPercent: 15, // subtle parallax
-      //   ease: "none",
-      //   scrollTrigger: {
-      //     trigger: containerRef.current,
-      //     start: "top bottom",
-      //     end: "bottom top",
-      //     scrub: true,
-      //   },
-      // });
+      gsap.to(imageRef.current, {
+        yPercent: 15, // subtle parallax
+        ease: "none",
+        scrollTrigger: {
+          trigger: containerRef.current,
+          start: "top bottom",
+          end: "bottom top",
+          scrub: true,
+        },
+      });
 
       // 2️⃣ Text fade-up on page load (once)
       gsap.from(textRef.current, {
@@ -81,14 +81,14 @@ export default function Hero() {
           alt="The Irish Cafe Interior — one of the BEST Cafés in Madurai"
           fill
           className="object-cover object-center scale-105 hidden md:block animate-subtle-zoom"
-        // loading="lazy"
+          // loading="lazy"
         />
         <Image
           src="/images/mob-hero.jpg"
           alt="Best Cafe in Madurai — The Irish Cafe"
           fill
           className="object-cover object-center block md:hidden animate-subtle-zoom"
-        // loading="lazy"
+          // loading="lazy"
         />
         {/* Editorial Overlay */}
         <div className="absolute inset-0 block md:hidden bg-black/30" />

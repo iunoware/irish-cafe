@@ -12,7 +12,7 @@ export default function About() {
     <>
       <section className="overflow-x-clip bg-white relative">
         <div className="absolute inset-0 opacity-80 pointer-events-none z-0">
-          <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/xv.png')] " />
+          <div className="absolute inset-0 bg-[url('/images/floral-patterns.png')] " />
         </div>
         <Hero />
         <BrandEssence />

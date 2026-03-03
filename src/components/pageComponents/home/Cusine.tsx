@@ -93,8 +93,8 @@ export default function Cusine() {
       className="relative bg-white py-24 md:py-18 px-6 overflow-hidden"
     >
       {/* Subtle Background Detail */}
-      <div className="absolute inset-0 opacity-60 pointer-events-none">
-        <div className="absolute inset-0 bg-[url('/images/clean-gray-paper.png')]" />
+      <div className="absolute inset-0 opacity-60 pointer-events-none z-0">
+        <div className="absolute inset-0 bg-[url('/images/floral-patterns.png')] " />
       </div>
 
       <h2 className="pb-25 tracking-tight leading-[1.1] italic text-transparent bg-clip-text bg-linear-to-r from-gray-600 via-gray-800 to-black text-center text-4xl md:text-7xl">

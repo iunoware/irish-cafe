@@ -142,8 +142,8 @@ const MenuHighlights = () => {
 
   return (
     <section ref={containerRef} className="bg-white relative py-32 md:py-18">
-      <div className="absolute inset-0 opacity-60 pointer-events-none">
-        <div className="absolute inset-0 bg-[url('/images/clean-gray-paper.png')]" />
+      <div className="absolute inset-0 opacity-60 pointer-events-none z-0">
+        <div className="absolute inset-0 bg-[url('/images/floral-patterns.png')] " />
       </div>
       <div className="container mx-auto px-6 md:px-12 lg:px-24">
         {HIGHLIGHTS.map((group) => (
@@ -166,9 +166,15 @@ const MenuHighlights = () => {
 
                 // Aspect ratio logic for Next.js Image fill
                 let aspectClass = "aspect-square";
-                if (item.span.includes("col-span-2") && item.span.includes("row-span-1"))
+                if (
+                  item.span.includes("col-span-2") &&
+                  item.span.includes("row-span-1")
+                )
                   aspectClass = "aspect-[2/1]";
-                if (item.span.includes("col-span-1") && item.span.includes("row-span-2"))
+                if (
+                  item.span.includes("col-span-1") &&
+                  item.span.includes("row-span-2")
+                )
                   aspectClass = "aspect-[9/16]";
 
                 return (

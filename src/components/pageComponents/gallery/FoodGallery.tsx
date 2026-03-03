@@ -12,7 +12,7 @@ const foodImages = [
   // 1
   {
     src: "/images/DSC00178.JPG",
-    alt: "White sauce pasta at our multi-cuisine cafe in Madurai",
+    alt: "Best Italian Cafe in Madurai",
     dishName: "white sauce pasta",
     className: "md:col-span-4 md:row-span-2",
     aspect: "aspect-[3/4] md:aspect-auto md:h-full",
@@ -20,7 +20,7 @@ const foodImages = [
   // 2
   {
     src: "/images/DSC00126.JPG",
-    alt: "Irish cafe Lamb Dish - a must-try in Madurai",
+    alt: "Italian cafe in Madurai",
     dishName: "Lamb Dish",
     className: "md:col-span-8 md:row-span-1",
     aspect: "aspect-video md:aspect-auto md:h-full",
@@ -28,7 +28,7 @@ const foodImages = [
   // 3
   {
     src: "/images/DSC01547.jpg",
-    alt: "Fresh ingredients at the best cafe in Madurai",
+    alt: "Italian style cafe in Madurai",
     dishName: "dish-3",
     className: "md:col-span-4 md:row-span-1",
     aspect: "aspect-square md:aspect-auto md:h-full",
@@ -36,7 +36,7 @@ const foodImages = [
   // 4
   {
     src: "/images/DSC00130.webp",
-    alt: "Signature dish",
+    alt: "Italian multi-cuisine cafe in Madurai",
     dishName: "dish-4",
     className: "md:col-span-4 md:row-span-2",
     aspect: "aspect-[3/4] md:aspect-auto md:h-full",
@@ -44,7 +44,7 @@ const foodImages = [
   // 5
   {
     src: "/images/DSC01425.webp",
-    alt: "Irish cafe Shepherd's pie",
+    alt: "Best multi-cuisine cafe in Madurai",
     dishName: "SHEPHERD'S PIE",
     className: "md:col-span-5 md:row-span-1",
     aspect: "aspect-video md:aspect-auto md:h-full",
@@ -52,7 +52,7 @@ const foodImages = [
   // 6
   {
     src: "/images/DSC00139.webp",
-    alt: "Texture and taste",
+    alt: "Best Italian cuisine cafe in Madurai",
     dishName: "Wood Fire Pizza",
     className: "md:col-span-3 md:row-span-1",
     aspect: "aspect-square md:aspect-auto md:h-full",
@@ -60,7 +60,7 @@ const foodImages = [
   // 7
   {
     src: "/images/italian.webp",
-    alt: "Italian heritage",
+    alt: "Best Cappaccino in Madurai",
     dishName: "dish-7",
     className: "md:col-span-4 md:row-span-1",
     aspect: "aspect-video md:aspect-auto md:h-full",
@@ -68,7 +68,7 @@ const foodImages = [
   // 8
   {
     src: "/images/american.webp",
-    alt: "American bold flavors",
+    alt: "Best American Cafe in Madurai",
     dishName: "dish-8",
     className: "md:col-span-4 md:row-span-1",
     aspect: "aspect-video md:aspect-auto md:h-full",
@@ -76,7 +76,7 @@ const foodImages = [
   // 9
   {
     src: "/images/DSC00146.webp",
-    alt: "Irish cafe Wood Fire Pizza",
+    alt: "Best Irish cafe in Madurai",
     dishName: "Wood Fire Pizza",
     className: "md:col-span-4 md:row-span-1",
     aspect: "aspect-video md:aspect-auto md:h-full",
@@ -84,15 +84,15 @@ const foodImages = [
   // 10
   {
     src: "/images/DSC00161.webp",
-    alt: "Irish cafe Cocktail Prawns",
-    dishName: "Cocktail Prawns",
+    alt: "Best Pizzas in Madurai",
+    dishName: "Best White Sauce Pasta",
     className: "md:col-span-4 md:row-span-2",
     aspect: "aspect-[3/4] md:aspect-auto md:h-full",
   },
   // 11
   {
     src: "/images/DSC00125.webp",
-    alt: "Roasted Chicken Burger at our multi-cuisine cafe in Madurai",
+    alt: "Italian multi-cuisine cafe in Madurai",
     dishName: "Roasted Chicken Burger",
     className: "md:col-span-8 md:row-span-1",
     aspect: "aspect-video md:aspect-auto md:h-full",
