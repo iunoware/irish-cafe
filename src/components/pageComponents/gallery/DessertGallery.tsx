@@ -19,7 +19,7 @@ const peopleImages = [
   // 1
   {
     src: "/images/des-1.jpeg",
-    alt: "Guest enjoying a moment at our aesthetic cafe in Madurai",
+    alt: "Aesthetic cafe in Madurai",
     className: "md:col-span-4 md:row-span-1",
     aspect: "aspect-square md:aspect-auto md:h-full",
     dishName: "Hazelnut Chocolate Pie",
@@ -27,7 +27,7 @@ const peopleImages = [
   // 2
   {
     src: "/images/chocolate-cake.jpeg",
-    alt: "Quiet conversation among Cafés in Madurai",
+    alt: "Best cafe near me",
     className: "md:col-span-4 md:row-span-1",
     aspect: "aspect-square md:aspect-auto md:h-full",
     dishName: "Magic Chocolate Cake",
@@ -35,7 +35,7 @@ const peopleImages = [
   // 3
   {
     src: "/images/cheeseCake.heic",
-    alt: "Barista detail",
+    alt: "Best restaurants in Madurai",
     className: "md:col-span-4 md:row-span-2",
     aspect: "aspect-[3/4] md:aspect-auto md:h-full",
     dishName: "Cheese Cake",
@@ -43,7 +43,7 @@ const peopleImages = [
   // 4
   {
     src: "/images/thought-before-trend.webp",
-    alt: "Shared laughter at an aesthetic cafe in Madurai",
+    alt: "Cafe in Madurai with best ambience",
     className: "md:col-span-4 md:row-span-2",
     aspect: "aspect-[3/4] md:aspect-auto md:h-full",
     dishName: "Watermelon Mojito",
@@ -51,7 +51,7 @@ const peopleImages = [
   // 5
   {
     src: "/images/shamrock-milkshake.jpeg",
-    alt: "Soft interaction",
+    alt: "Best ambience cafe in Madurai",
     className: "md:col-span-4 md:row-span-1",
     aspect: "aspect-square md:aspect-auto md:h-full",
     dishName: "Shamrock Milk shake",
@@ -60,7 +60,7 @@ const peopleImages = [
   // 6
   {
     src: "/images/pannacotta.webp",
-    alt: "Guest enjoying a moment",
+    alt: "fast food cafe in Madurai ",
     className: "md:col-span-4 md:row-span-1",
     aspect: "aspect-square md:aspect-auto md:h-full",
     dishName: "Pannacotta",
@@ -68,7 +68,7 @@ const peopleImages = [
   // 7
   {
     src: "/images/drink-3.jpg",
-    alt: "Guest enjoying a moment",
+    alt: "Multi-cuisine cafe in Madurai near me",
     className: "md:col-span-4 md:row-span-1",
     aspect: "aspect-square md:aspect-auto md:h-full",
     dishName: "Blue Pea Flower Tea",

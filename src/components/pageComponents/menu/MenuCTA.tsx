@@ -44,14 +44,14 @@ const MenuCTA = () => {
       className="relative flex items-center justify-center bg-white py-12 md:py-10"
     >
       {/* Background Texture for the section */}
-      <div className="absolute inset-0 opacity-60 pointer-events-none">
-        <div className="absolute inset-0 bg-[url('/images/clean-gray-paper.png')]" />
+      <div className="absolute inset-0 opacity-60 pointer-events-none z-0">
+        <div className="absolute inset-0 bg-[url('/images/floral-patterns.png')] " />
       </div>
 
       {/* The Physical Menu Card */}
       <div
         ref={cardRef}
-        className="relative z-10 w-full border-4! border-black max-w-112.5 mx-6 bg-black px-8 py-16 text-center transition-all duration-500 hover:shadow-[0_20px_50px_rgba(0,0,0,0.08)] md:px-12 md:py-24"
+        className="relative z-10 h-130 w-full bg-[url('/images/menu-front.png')] bg-cover bg-center border-4! border-black max-w-112.5 mx-6  px-8 py-16 text-center transition-all duration-500 hover:shadow-[0_20px_50px_rgba(0,0,0,0.08)] md:px-12 md:py-24"
         style={{
           border: "1px solid rgba(0,0,0,0.1)",
           boxShadow: "0 10px 30px rgba(0,0,0,0.03)",
@@ -63,34 +63,44 @@ const MenuCTA = () => {
         </div>
 
         <div className="relative z-10 flex flex-col items-center">
-          <span className="mb-6 block font-inter text-[10px] font-bold tracking-[0.4em] text-zinc-400 uppercase">
-            The Irish Cafe
+          <span className="mb-6 block font-inter text-[10px] font-bold tracking-[0.4em] text-black uppercase">
+            {/* The Irish Cafe */}
           </span>
 
-          <h2 className="mb-8 font-libre text-3xl font-normal tracking-tight text-zinc-200 md:text-5xl uppercase">
-            Menu
+          <h2 className="mb-8 font-libre text-3xl font-normal tracking-tight text-black md:text-5xl uppercase">
+            {/* Menu */}
           </h2>
 
           <div className="mb-12 h-px w-8 bg-zinc-200" />
 
-          <p className="mb-16 font-inter text-sm leading-relaxed text-zinc-300 italic md:text-base">
-            Our collection of seasonal food from the best ambience cafe{" "}
+          <p className="mb-36 font-inter text-sm leading-relaxed text-zinc-300 italic md:text-base">
+            {/* Our collection of seasonal food from the best ambience cafe{" "}
             <br className="hidden md:block" />
-            in Madurai is available to view in our house menu.
+            in Madurai is available to view in our house menu. */}
           </p>
 
-          <a
+          {/* <a
             href="/files/menu.pdf"
             target="_blank"
-            className="group flex flex-col items-center"
+            className="group flex flex-col  items-center"
           >
-            <span className="font-libre text-lg text-zinc-100 transition-colors group-hover:text-white md:text-xl">
+            <span className="font-libre text-lg text-zinc-100 bg-black p-2 transition-colors group-hover:text-white md:text-xl">
               View Full Menu
             </span>
             <div className="mt-2 h-px w-20 bg-zinc-600 transition-all duration-500 group-hover:w-32 group-hover:bg-zinc-500" />
             <span className="mt-4 font-inter text-[9px] font-bold tracking-widest text-zinc-300 uppercase">
               (Digital PDF)
             </span>
+          </a> */}
+          <a
+            target="_blank"
+            href="/files/menu.pdf"
+            className="inline-block group relative font-sans text-[11px] bg-white uppercase tracking-[0.3em] py-2 px-4 md:py-4 md:px-10 border border-white/30 hover:border-black transition-all duration-500 overflow-hidden"
+          >
+            <span className="relative z-10 text-black  group-hover:text-white transition-colors duration-500">
+              View Full Menu
+            </span>
+            <div className="absolute inset-0 bg-black translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-[cubic-bezier(0.19,1,0.22,1)]" />
           </a>
         </div>
 

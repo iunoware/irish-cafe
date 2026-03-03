@@ -23,14 +23,14 @@ const eventTypes = [
     description:
       "Celebrate another year with those who matter most. Unhurried conversations over shared plates and fine coffee.",
     image: "/images/events-madurai.jpg",
-    alt: "cafes like Starbucks",
+    alt: "Cafes like Starbucks",
   },
   {
     title: "Life's Milestones",
     description:
       "From vehicle deliveries to personal triumphs, our space is yours to celebrate the arrivals that matter.",
     image: "/images/birthday-evernts-madurai.jpg",
-    alt: "cafe in Madurai for couples",
+    alt: "Cafe in Madurai for couples",
   },
 ];
 
@@ -69,8 +69,8 @@ const CelebrateWithUs = () => {
       className="w-full py-24 md:py-20 bg-[#0a0a0a] text-white overflow-hidden relative"
     >
       {/* Subtle Background Texture */}
-      <div className="absolute inset-0 opacity-40 pointer-events-none">
-        <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/clean-gray-paper.png')] invert" />
+      <div className="absolute inset-0 opacity-60 pointer-events-none z-0">
+        <div className="absolute inset-0 bg-[url('/images/floral-patterns.png')] " />
       </div>
 
       <div className="max-w-7xl mx-auto px-6 relative z-10">
@@ -83,13 +83,17 @@ const CelebrateWithUs = () => {
             Celebrate With Us
           </h2>
           <p className="max-w-2xl mx-auto text-neutral-400 text-sm md:text-lg font-sans leading-relaxed">
-            Our space is more than a café; it&apos;s a backdrop for the stories you tell
-            and the memories you create. Warm, flexible, and always inviting.
+            Our space is more than a café; it&apos;s a backdrop for the stories
+            you tell and the memories you create. Warm, flexible, and always
+            inviting.
           </p>
         </div>
 
         {/* Event Cards Grid */}
-        <div ref={gridRef} className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
+        <div
+          ref={gridRef}
+          className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12"
+        >
           {eventTypes.map((event, index) => (
             <div key={index} className="group cursor-default">
               <div className="aspect-4/5 relative rounded-sm overflow-hidden mb-8 shadow-2xl shadow-black/50">
@@ -116,7 +120,10 @@ const CelebrateWithUs = () => {
 
         {/* CTA */}
         <div className="mt-20 md:mt-32 text-center">
-          <a href="tel:+918148987007" className="inline-flex items-center gap-6 group">
+          <a
+            href="tel:+918148987007"
+            className="inline-flex items-center gap-6 group"
+          >
             <span className="text-[10px] md:text-xs uppercase tracking-[0.4em] text-neutral-300 font-medium border-b border-neutral-800 pb-2 group-hover:border-neutral-500 transition-colors duration-500">
               Host your moment
             </span>

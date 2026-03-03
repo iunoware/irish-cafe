@@ -92,8 +92,8 @@ export default function Ambience() {
       className="relative bg-white py-24 md:py-18 px-6 md:px-12 overflow-hidden"
     >
       {/* Subtle Texture Overlay */}
-      <div className="absolute inset-0 opacity-60 pointer-events-none">
-        <div className="absolute inset-0 bg-[url('/images/clean-gray-paper.png')]" />
+      <div className="absolute inset-0 opacity-60 pointer-events-none z-0">
+        <div className="absolute inset-0 bg-[url('/images/floral-patterns.png')] " />
       </div>
 
       <div className="max-w-7xl mx-auto">

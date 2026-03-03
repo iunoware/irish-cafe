@@ -43,8 +43,8 @@ export default function AboutTeaser() {
       className="relative bg-white py-24 md:py-48 px-6 md:px-12 overflow-hidden"
     >
       {/* Subtle Texture Background */}
-      <div className="absolute inset-0 opacity-60 pointer-events-none">
-        <div className="absolute inset-0 bg-[url('/images/clean-gray-paper.png')]" />
+      <div className="absolute inset-0 opacity-60 pointer-events-none z-0">
+        <div className="absolute inset-0 bg-[url('/images/floral-patterns.png')] " />
       </div>
 
       <div ref={contentRef} className="max-w-7xl mx-auto opacity-0">
@@ -56,16 +56,17 @@ export default function AboutTeaser() {
                 The Story
               </span>
               <h2 className="font-serif text-4xl md:text-6xl text-zinc-900 leading-tight tracking-tight">
-                Crafted in Madurai, Inspired by <span className="italic">the World.</span>
+                Crafted in Madurai, Inspired by{" "}
+                <span className="italic">the World.</span>
               </h2>
             </div>
 
             <div className="space-y-8">
               <p className="font-sans text-zinc-500 text-sm md:text-lg leading-relaxed tracking-wide">
-                What began as a passion for global culinary traditions has evolved into
-                one of the top Cafés in Madurai. While offering the modern comfort of
-                cafes like Starbucks in Madurai, we bring authentic Irish hospitality
-                home.
+                What began as a passion for global culinary traditions has
+                evolved into one of the top Cafés in Madurai. While offering the
+                modern comfort of cafes like Starbucks in Madurai, we bring
+                authentic Irish hospitality home.
               </p>
 
               <Link

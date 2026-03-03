@@ -18,15 +18,15 @@ const contents: Contents[] = [
   {
     id: 1,
     image: "/images/the-irish-cafe-multi-cuisine.webp",
-    alt: "Best Ambience Cafes in Madurai",
+    alt: "Cafés in Madurai",
     heading: "A café shaped by intention, not impulse.",
     content:
       "We believe cafes in Madurai should feel calm, not crowded. Our multi-cuisine cafe in Madurai is designed to encourage conversation, comfort, and unhurried moments — not rush or distraction. Every element works together here.",
   },
   {
     id: 2,
-    image: "/images/DSC00077.webp",
-    alt: "Artisan Coffee among Best Restaurants in Madurai",
+    image: "/images/chicken-stead.JPG",
+    alt: "cafes like Starbucks in Madurai",
     heading: "Craft over trends.",
     content:
       "We focus on quality that lasts, not ideas that fade. As one of the best restaurants in Madurai, every detail is chosen with care and respect for the craft. What we serve is intentional - driven by consistency and craftsmanship.",
@@ -34,7 +34,7 @@ const contents: Contents[] = [
   {
     id: 3,
     image: "/images/best-cafe-in-madurai.webp",
-    alt: "Quiet Luxury Aesthetic Cafe in Madurai",
+    alt: "Best cafe in Madurai for couples",
     heading: "Culture over convenience.",
     content:
       "The Irish Cafe brings together global influences, thoughtfully interpreted through taste and experience. It’s an aesthetic cafe in Madurai shaped by ideas, not shortcuts - where global sensibilities meet local warmth.",

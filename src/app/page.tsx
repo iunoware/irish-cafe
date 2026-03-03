@@ -12,8 +12,8 @@ import CelebrateWithUs from "@/components/pageComponents/home/CelebrateWithUs";
 export default function Home() {
   return (
     <main className="relative min-h-screen">
-      <div className="absolute inset-0 opacity-60 pointer-events-none">
-        <div className="absolute inset-0 bg-[url('/images/clean-gray-paper.png')]" />
+      <div className="absolute inset-0 opacity-60 pointer-events-none z-0">
+        <div className="absolute inset-0 bg-[url('/images/floral-patterns.png')] " />
       </div>
       <Hero />
       <Philosophy />

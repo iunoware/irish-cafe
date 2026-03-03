@@ -8,8 +8,8 @@ export default function Gallery() {
   return (
     <>
       <section className="bg-white overflow-x-clip relative">
-        <div className="absolute inset-0 opacity-80 pointer-events-none z-0">
-          <div className="absolute inset-0 bg-[url('/images/clean-gray-paper.png')] " />
+        <div className="absolute inset-0 opacity-60 pointer-events-none z-0">
+          <div className="absolute inset-0 bg-[url('/images/floral-patterns.png')] " />
         </div>
         <Hero />
         <SpaceGallery />

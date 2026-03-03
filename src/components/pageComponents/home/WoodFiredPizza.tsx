@@ -110,8 +110,8 @@ export default function WoodFiredPizza() {
       className="relative min-h-screen bg-white py-24 md:py-48 px-6 md:px-12 overflow-hidden flex flex-col items-center justify-center"
     >
       {/* Subtle Grain Overlay */}
-      <div className="absolute inset-0 opacity-40 pointer-events-none">
-        <div className="absolute inset-0 bg-[url('/images/clean-gray-paper.png')]" />
+      <div className="absolute inset-0 opacity-60 pointer-events-none z-0">
+        <div className="absolute inset-0 bg-[url('/images/floral-patterns.png')] " />
       </div>
 
       <div className="max-w-7xl w-full grid grid-cols-1 md:grid-cols-12 gap-16 md:gap-24 items-center">
