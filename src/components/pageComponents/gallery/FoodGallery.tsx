@@ -51,7 +51,7 @@ const foodImages = [
   },
   // 6
   {
-    src: "/images/DSC00139.webp",
+    src: "/images/DSC00139.jpg",
     alt: "Best Italian cuisine cafe in Madurai",
     dishName: "Wood Fire Pizza",
     className: "md:col-span-3 md:row-span-1",
@@ -91,7 +91,7 @@ const foodImages = [
   },
   // 11
   {
-    src: "/images/DSC00125.webp",
+    src: "/images/DSC00125.jpg",
     alt: "Italian multi-cuisine cafe in Madurai",
     dishName: "Roasted Chicken Burger",
     className: "md:col-span-8 md:row-span-1",
